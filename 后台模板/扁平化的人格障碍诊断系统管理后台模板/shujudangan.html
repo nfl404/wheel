@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>档案管理</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/begtable.css" />
+	</head>
+
+	<body>
+		<div style="margin: 15px;">
+			<ul class="layui-nav">
+				<li class="layui-nav-item">
+					<a href="#">数据档案</a>
+				</li>
+				<li class="layui-nav-item layui-this">
+					<a href="#">测试结果数据</a>
+					
+				</li>
+				<li class="layui-nav-item">
+					<a href="#">测试数据统计</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="#">危机数据统计</a>
+				</li>
+                <li class="layui-nav-item">
+					<a href="#">导出数据记录</a>
+				</li>
+                <li class="layui-nav-item">
+					<a href="#">案例数据</a>
+				</li>
+			</ul>
+			<fieldset class="layui-elem-field">
+				<legend align="center">数据管理</legend>
+				<div class="layui-field-box"><p align="center"><input name="" type="text" value="搜索"></p></div>
+			</fieldset>
+			<hr>
+			<div style="width: 90%; height: 400px; border: 1px solid #009688;">
+			  <div class="beg-table-box">
+					<div class="beg-table-body">
+						<table class="beg-table beg-table-bordered beg-table-striped beg-table-hovered">
+							<thead>
+								<tr>
+                                    <th><form name="form1" method="post" action="">
+                                      
+                                        <label>
+                                          <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_0">
+                                          </label>
+                                        
+                                      
+                                    </form></th>
+									<th>用户名</th>
+									<th>性别</th>
+									<th>角色</th>
+									<th>所测量表</th>
+									<th>测试用时</th>
+                                  <th>测试时间</th>
+                                  <th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+                                    <td></td>
+									<td>张三</td>
+									<td>男</td>
+									<td>医生</td>
+									<td>表一</td>
+									<td>30分钟</td>
+                                    <td>2017-05-01</td>
+                                    <td>结果</td>
+								</tr>
+								<tr>
+                                    <td></td>
+									<td>李四</td>
+									<td>女</td>
+									<td>会计</td>
+									<td>表二</td>
+									<td>40分钟</td>
+                                    <td>2017-6-01</td>
+                                    <td>结果</td>
+								</tr>
+								<tr>
+                                    <td></td>
+									<td>sjj</td>
+									<td>男</td>
+									<td>软件设计</td>
+									<td>表三</td>
+									<td>45分钟</td>
+                                    <td>2017-6-01</td>
+                                    <td>结果</td>
+								</tr>
+								<tr>
+                                    <td></td>
+									<td>小明</td>
+									<td>男</td>
+									<td>学生</td>
+									<td>表四</td>
+									<td>1小时</td>
+                                    <td>2017-6-01</td>
+                                    <td>结果</td>
+								</tr>
+								<tr>
+                                    <td></td>
+									<td>王五</td>
+									<td>男</td>
+									<td>农民</td>
+									<td>表五</td>
+									<td>35分钟</td>
+                                    <td>2017-6-01</td>
+                                    <td>结果</td>
+								</tr>
+								<tr>
+                                    <td></td>
+									<td>莉莉</td>
+									<td>女</td>
+									<td>企业家</td>
+									<td>表六</td>
+									<td>30分钟</td>
+                                    <td>2017-6-01</td>
+                                    <td>结果</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="beg-table-paged"></div>
+			  </div>
+			</div>
+		</div>
+        <div class="footer">
+<!--按钮-->
+                <div>
+					<a><button class="layui-btn layui-btn-normal layui-btn-radius">查看</button></a>
+                    <a><button class="layui-btn layui-btn-normal layui-btn-radius">导出</button></a>
+                    <a><button class="layui-btn layui-btn-normal layui-btn-radius">打印</button></a>
+                    <a><button class="layui-btn layui-btn-normal layui-btn-radius">删除</button></a>
+        <div id="fade" class="black_overlay"></div> 
+				</div>
+<!--结束-->                
+</div>
+		<script type="text/javascript" src="plugins/layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'js/'
+			});
+
+			layui.use('begtable', function() {
+				var begtable = layui.begtable(),
+					layer = layui.layer,
+					$ = layui.jquery,
+					laypage = layui.laypage;
+
+				laypage({
+					cont: $('.beg-table-paged'),
+					pages: 25 //总页数
+						,
+					groups: 5 //连续显示分页数
+						,
+					jump: function(obj, first) {
+						//得到了当前页，用于向服务端请求对应数据
+						var curr = obj.curr;
+						if(!first) {
+							//layer.msg('第 '+ obj.curr +' 页');
+						}
+					}
+				});
+
+				console.log(begtable.getSelectedRows());
+				console.log(location);
+			});
+		</script>
+        
+        <script>
+			layui.use('element', function() {
+				var element = layui.element(); //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+			});
+		</script>
+
+	</body>
+
+</html>

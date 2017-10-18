@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+        <script type="text/javascript">
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+ 
+ // 定义并调用自动播放函数
+ timer = setInterval(autoPlay, 2000);
+ 
+ // 鼠标划过整个容器时停止自动播放
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+ 
+ // 鼠标离开整个容器时继续播放至下一张
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+ // 遍历所有数字导航实现划过切换至对应的图片
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+ // 定义图片切换函数
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+ 
+ </script> 
+		<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/main.css" />
+        
+	</head>
+
+	<body>
+		<div class="admin-main">
+			<blockquote class="layui-elem-quote">
+
+			</blockquote>
+			<fieldset class="layui-elem-field" >
+				<legend align="center">人格障碍</legend>
+				<div class="layui-field-box">
+					<fieldset class="layui-elem-field layui-field-title">
+						
+						<div class="layui-field-box">
+                        <div class="clearfix" id="contentBox">
+  <div id="first" class="buttonBox">
+    <button>依赖型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>焦虑型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>分裂样人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>强迫型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>偏执型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>表演型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>冲动控制性人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+  <div id="first" class="buttonBox">
+    <button>反社会型人格障碍</button>
+    <div class="border"></div>
+    <div class="border"></div>
+  </div>
+</div>
+                        </div>
+					</fieldset>
+					<fieldset class="layui-elem-field layui-field-title">
+						<legend align="center">系统说明</legend>
+						<div class="layui-field-box">
+							<p>本心理诊断系统是为了辅助师进行诊断评估，仅作为心理咨询师初步筛选评估之用。</p>
+							
+						</div>
+					</fieldset>
+				</div>
+			</fieldset>
+		</div>
+	</body>
+
+</html>

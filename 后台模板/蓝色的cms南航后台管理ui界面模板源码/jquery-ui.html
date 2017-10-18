@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>JqueryUI - UI元素 - 统一开发平台 - UI库</title>
+		<meta name="description" content="Restyling jQuery UI Widgets and Elements" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-fonts.css" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" id="main-ace-style" />
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
+		<![endif]-->
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="assets/js/ace-extra.min.js"></script>
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default">
+
+			<div class="navbar-container" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<!-- #section:basics/navbar.layout.brand -->
+					<a href="index.html" class="navbar-brand">
+						<small>
+							<img src="assets/avatars/logo.png" alt="" />
+						</small>
+					</a>
+				</div>
+
+				<!-- #section:basics/navbar.dropdown -->
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									13条未读信息
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#">
+												<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">B2C:</span>
+														系统产生20个错误，12个警告...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>2014-12-15 18:00:00</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">积分商城:</span>
+														系统产生20个错误，12个警告...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>2014-12-15 18:00:00</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">政府机票采购:</span>
+														系统产生20个错误，12个警告...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>2014-12-15 18:00:00</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<img src="assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">B2B:</span>
+														系统产生20个错误，12个警告...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>2014-12-15 18:00:00</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<img src="assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">货运系统:</span>
+														系统产生20个错误，12个警告...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>2014-12-15 18:00:00</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										查看全部消息
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- #section:basics/navbar.user_menu -->
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									欢迎您<br />
+									陈子昂
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										系统设置
+									</a>
+								</li>
+
+								<li>
+									<a href="profile.html">
+										<i class="ace-icon fa fa-user"></i>
+										个人信息设置
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-power-off"></i>
+										登出
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- /section:basics/navbar.user_menu -->
+					</ul>
+				</div>
+
+				<!-- /section:basics/navbar.dropdown -->
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+
+			<!-- #section:basics/sidebar -->
+			<div id="sidebar" class="sidebar responsive">
+
+				<ul class="nav nav-list">
+					<li class="active">
+						<a href="index.html">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 总控制台 </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="active open">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-desktop"></i>
+							<span class="menu-text"> UI &amp; 元素 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+
+							<li class="">
+								<a href="typography.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									排版
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									UI元素
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="buttons.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									按钮 &amp; 图标
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="treeview.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									树状结构
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="active">
+								<a href="jquery-ui.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									jQuery UI
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="nestable-list.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									可拖拽列表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+									三级菜单
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="#">
+											<i class="menu-icon fa fa-leaf green"></i>
+											第一级
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="#" class="dropdown-toggle">
+											<i class="menu-icon fa fa-pencil orange"></i>
+
+											第四级
+											<b class="arrow fa fa-angle-down"></b>
+										</a>
+
+										<b class="arrow"></b>
+
+										<ul class="submenu">
+											<li class="">
+												<a href="#">
+													<i class="menu-icon fa fa-plus purple"></i>
+													添加商品
+												</a>
+
+												<b class="arrow"></b>
+											</li>
+
+											<li class="">
+												<a href="#">
+													<i class="menu-icon fa fa-eye pink"></i>
+													查看商品
+												</a>
+
+												<b class="arrow"></b>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> 表格 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="tables.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									简单通用表格
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="jqgrid.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									jqGrid插件表格
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 表单 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="form-elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									表单组件
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="form-wizard.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									向导提示 &amp; 验证
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="wysiwyg.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									编辑器
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="dropzone.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									文件上传
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="widgets.html">
+							<i class="menu-icon fa fa-list-alt"></i>
+							<span class="menu-text"> 插件 </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="calendar.html">
+							<i class="menu-icon fa fa-calendar"></i>
+
+							<span class="menu-text">
+								日历
+
+								<!-- #section:basics/sidebar.layout.badge -->
+								<span class="badge badge-transparent tooltip-error" title="有2件重要事件">
+									<i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
+								</span>
+
+								<!-- /section:basics/sidebar.layout.badge -->
+							</span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="gallery.html">
+							<i class="menu-icon fa fa-picture-o"></i>
+							<span class="menu-text"> 相册 </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tag"></i>
+							<span class="menu-text"> 更多页面 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									用户信息
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									售价单
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="invoice.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									购物车
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									时间轴
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="login.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									登录注册
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-file-o"></i>
+
+							<span class="menu-text">
+								其他页面
+
+								<!-- #section:basics/sidebar.layout.badge -->
+								<span class="badge badge-primary">5</span>
+
+								<!-- /section:basics/sidebar.layout.badge -->
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="faq.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									帮助页面
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="error-404.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									404错误页面
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="error-500.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									500错误页面
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="grid.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									网格
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="blank.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									空白页面
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+
+			</div>
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<!-- #section:basics/content.breadcrumbs -->
+				<div class="breadcrumbs" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li>
+							<i class="ace-icon fa fa-home home-icon"></i>
+							<a href="index.html">UI库首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">UI & 元素</a>
+						</li>
+						<li>
+							<a href="elements.html">JqueryUI</a>
+						</li>
+					</ul><!-- /.breadcrumb -->
+
+					<!-- #section:basics/content.searchbox -->
+					<div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input type="text" placeholder="请输入关键字 ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+								<i class="ace-icon fa fa-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div><!-- /.nav-search -->
+				</div>
+
+				<!-- /section:basics/content.breadcrumbs -->
+				<div class="page-content">
+
+					<div class="page-content-area">
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="row">
+									<div class="col-sm-6">
+										<h3 class="header blue lighter smaller">
+											<i class="ace-icon fa fa-calendar-o smaller-90"></i>
+											日历插件
+										</h3>
+
+										<div class="row">
+											<div class="col-xs-6">
+												<div class="input-group input-group-sm">
+													<input type="text" id="datepicker" class="form-control" />
+													<span class="input-group-addon">
+														<i class="ace-icon fa fa-calendar"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- ./span -->
+
+									<div class="col-sm-6">
+										<h3 class="header blue lighter smaller">
+											<i class="ace-icon fa fa-list-alt smaller-90"></i>
+											弹出层
+										</h3>
+										<a href="#" id="id-btn-dialog2" class="btn btn-info btn-sm">确认对话框</a>
+										<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-sm">通用对话框</a>
+
+										<div id="dialog-message" class="hide">
+											<p>
+												这里是通用对话框的内容，这个对话框是可关闭的。
+											</p>
+
+											<div class="hr hr-12 hr-double"></div>
+
+											<p>
+												这里也是可以放内容的！~你信么？
+											</p>
+										</div><!-- #dialog-message -->
+
+										<div id="dialog-confirm" class="hide">
+											<div class="alert alert-info bigger-110">
+												这里可以放置对话框的内容部分。
+											</div>
+
+											<div class="space-6"></div>
+
+											<p class="bigger-110 bolder center grey">
+												<i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+												你确定要删除吗？
+											</p>
+										</div><!-- #dialog-confirm -->
+									</div><!-- ./span -->
+								</div><!-- ./row -->
+
+								<div class="space-12"></div>
+
+								<div class="row">
+									<div class="col-sm-6">
+										<h3 class="header blue lighter smaller">
+											<i class="ace-icon fa fa-terminal smaller-90"></i>
+											自动完成
+										</h3>
+
+										<div class="row">
+											<div class="col-sm-8 col-md-7">
+												<input id="tags" type="text" class="form-control" />
+												<div class="space-4"></div>
+
+												<input id="search" type="text" class="form-control" placeholder="输入a 或者 h 进行测试" />
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-xs-12">
+												<h3 class="header blue lighter smaller">
+													<i class="ace-icon fa fa-info smaller-90"></i>
+													文字提示
+												</h3>
+
+												<div class="bigger-110">
+													<p>
+														<a class="grey" id="show-option" href="#" title="slide down on show">
+															<i class="ace-icon fa fa-hand-o-right"></i>
+															下拉提示样式
+														</a>
+													</p>
+
+													<p>
+														<a class="blue" id="hide-option" href="#" title="explode on hide">
+															<i class="ace-icon fa fa-hand-o-right"></i>
+															裂开提示样式
+														</a>
+													</p>
+
+													<p>
+														<a class="pink" id="open-event" href="#" title="move down on show">
+															<i class="ace-icon fa fa-hand-o-right"></i>
+															上拉提示样式
+														</a>
+													</p>
+												</div>
+											</div>
+										</div><!-- ./row -->
+									</div><!-- ./col -->
+
+									<div class="col-sm-6">
+										<h3 class="header blue lighter smaller">
+											<i class="ace-icon fa fa-bars smaller-90"></i>
+											菜单样式
+										</h3>
+
+										<ul id="menu">
+											<li class="ui-state-disabled">
+												<a href="#">Aberdeen</a>
+											</li>
+
+											<li>
+												<a href="#">Ada</a>
+											</li>
+
+											<li>
+												<a href="#">Adamsville</a>
+											</li>
+
+											<li>
+												<a href="#">Addyston</a>
+											</li>
+
+											<li>
+												<a href="#">Delphi</a>
+
+												<ul>
+													<li class="ui-state-disabled">
+														<a href="#">Ada</a>
+													</li>
+
+													<li>
+														<a href="#">Saarland</a>
+													</li>
+
+													<li>
+														<a href="#">Salzburg</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="#">Saarland</a>
+											</li>
+
+											<li>
+												<a href="#">Salzburg</a>
+
+												<ul>
+													<li>
+														<a href="#">Delphi</a>
+
+														<ul>
+															<li>
+																<a href="#">Ada</a>
+															</li>
+
+															<li>
+																<a href="#">Saarland</a>
+															</li>
+
+															<li>
+																<a href="#">Salzburg</a>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<a href="#">Delphi</a>
+
+														<ul>
+															<li>
+																<a href="#">Ada</a>
+															</li>
+
+															<li>
+																<a href="#">Saarland</a>
+															</li>
+
+															<li>
+																<a href="#">Salzburg</a>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<a href="#">Perch</a>
+													</li>
+												</ul>
+											</li>
+
+											<li class="ui-state-disabled">
+												<a href="#">Amesville</a>
+											</li>
+										</ul>
+									</div><!-- ./col -->
+								</div><!-- ./row -->
+
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content-area -->
+				</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content">
+						<span class="bigger-120">
+							 统一开发平台-UI库 &copy; 2014
+						</span>
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='assets/js/jquery1x.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		<script src="assets/js/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+			
+				$( "#datepicker" ).datepicker({
+					showOtherMonths: true,
+					selectOtherMonths: false,
+				});
+			
+			
+				$.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+					_title: function(title) {
+						var $title = this.options.title || '&nbsp;'
+						if( ("title_html" in this.options) && this.options.title_html == true )
+							title.html($title);
+						else title.text($title);
+					}
+				}));
+			
+				$( "#id-btn-dialog1" ).on('click', function(e) {
+					e.preventDefault();
+			
+					var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
+						modal: true,
+						title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i>基于Jquery UI 的对话框</h4></div>",
+						title_html: true,
+						buttons: [ 
+							{
+								text: "取消",
+								"class" : "btn btn-xs",
+								click: function() {
+									$( this ).dialog( "close" ); 
+								} 
+							},
+							{
+								text: "确定",
+								"class" : "btn btn-primary btn-xs",
+								click: function() {
+									$( this ).dialog( "close" ); 
+								} 
+							}
+						]
+					});
+			
+				});
+			
+			
+				$( "#id-btn-dialog2" ).on('click', function(e) {
+					e.preventDefault();
+				
+					$( "#dialog-confirm" ).removeClass('hide').dialog({
+						resizable: false,
+						modal: true,
+						title: "<div class='widget-header'><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i>其实我就只是一个很低调的标题</h4></div>",
+						title_html: true,
+						buttons: [
+							{
+								html: "<i class='ace-icon fa fa-trash-o bigger-110'></i>&nbsp; 删除所有元素",
+								"class" : "btn btn-danger btn-xs",
+								click: function() {
+									$( this ).dialog( "close" );
+								}
+							}
+							,
+							{
+								html: "<i class='ace-icon fa fa-times bigger-110'></i>&nbsp; 取消",
+								"class" : "btn btn-xs",
+								click: function() {
+									$( this ).dialog( "close" );
+								}
+							}
+						]
+					});
+				});
+			
+			
+				
+				//autocomplete
+				 var availableTags = [
+					"ActionScript",
+					"AppleScript",
+					"Asp",
+					"BASIC",
+					"C",
+					"C++",
+					"Clojure",
+					"COBOL",
+					"ColdFusion",
+					"Erlang",
+					"Fortran",
+					"Groovy",
+					"Haskell",
+					"Java",
+					"JavaScript",
+					"Lisp",
+					"Perl",
+					"PHP",
+					"Python",
+					"Ruby",
+					"Scala",
+					"Scheme"
+				];
+				$( "#tags" ).autocomplete({
+					source: availableTags
+				});
+			
+				//custom autocomplete (category selection)
+				$.widget( "custom.catcomplete", $.ui.autocomplete, {
+					_renderMenu: function( ul, items ) {
+						var that = this,
+						currentCategory = "";
+						$.each( items, function( index, item ) {
+							if ( item.category != currentCategory ) {
+								ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+								currentCategory = item.category;
+							}
+							that._renderItemData( ul, item );
+						});
+					}
+				});
+				
+				 var data = [
+					{ label: "anders", category: "" },
+					{ label: "andreas", category: "" },
+					{ label: "antal", category: "" },
+					{ label: "annhhx10", category: "Products" },
+					{ label: "annk K12", category: "Products" },
+					{ label: "annttop C13", category: "Products" },
+					{ label: "anders andersson", category: "People" },
+					{ label: "andreas andersson", category: "People" },
+					{ label: "andreas johnson", category: "People" }
+				];
+				$( "#search" ).catcomplete({
+					delay: 0,
+					source: data
+				});
+				
+				
+				//tooltips
+				$( "#show-option" ).tooltip({
+					show: {
+						effect: "slideDown",
+						delay: 250
+					}
+				});
+			
+				$( "#hide-option" ).tooltip({
+					hide: {
+						effect: "explode",
+						delay: 250
+					}
+				});
+			
+				$( "#open-event" ).tooltip({
+					show: null,
+					position: {
+						my: "left top",
+						at: "left bottom"
+					},
+					open: function( event, ui ) {
+						ui.tooltip.animate({ top: ui.tooltip.position().top + 10 }, "fast" );
+					}
+				});
+			
+			
+				//Menu
+				$( "#menu" ).menu();
+			
+			
+				//slider example
+				$( "#slider" ).slider({
+					range: true,
+					min: 0,
+					max: 500,
+					values: [ 75, 300 ]
+				});
+			
+			
+			
+				//jquery accordion
+				$( "#accordion" ).accordion({
+					collapsible: true ,
+					heightStyle: "content",
+					animate: 250,
+					header: ".accordion-header"
+				}).sortable({
+					axis: "y",
+					handle: ".accordion-header",
+					stop: function( event, ui ) {
+						// IE doesn't register the blur when sorting
+						// so trigger focusout handlers to remove .ui-state-focus
+						ui.item.children( ".accordion-header" ).triggerHandler( "focusout" );
+					}
+				});
+
+			
+					
+			});
+		</script>
+	</body>
+</html>
