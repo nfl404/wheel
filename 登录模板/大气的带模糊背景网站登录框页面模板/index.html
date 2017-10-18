@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>用户普通登录和手机登录界面模板</title>    
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <!-- 新增登录 -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="js/login.js"></script>
+
+</head>
+
+<body>
+     <div class="UnauthHomePage">
+        <div class="register_shadow">
+            <div class="register_shadow_txt"></div>
+        </div>
+    </div>
+    <div class="login_containter">
+        <div class="login_left">
+            <a class="logo" href="http://www.sucaihuo.com/"></a>
+            <h3><span>登&nbsp;录</span></h3>
+            <h4 class="account_login"><a href="javascript:void(0)">手机动态登录<span></span></a></h4>
+            <h4 class="phone_login" style="display:none;"><a href="javascript:void(0)">返回账号登录</a></h4>
+            <div class="login_validate loginAccunt_validate">
+                <div class="input_item">
+                    <i class="icon_un"></i>
+                    <input type="text" name="username" value="请输入手机/邮箱/用户名" eg="请输入手机/邮箱/用户名" class="loginName" />
+                    <span class="error_info errorloginName" style="display:none;"></span>
+                </div>
+                <div class="input_item">
+                    <i class="icon_pw"></i>
+                    <span class="password_upTxt">请输入密码</span>
+                    <input type="password" name="password" class="loginPwd" />
+                    <span class="error_info errorloginPwd" style="display:none;"></span>
+                </div>
+                <div class="input_item input_item_yzm" style="display:none;">
+                    <div class="icon_yzm_item">
+                        <i class="icon_yzm"></i>
+                        <input type="text" name="yanzhengma" class="loginyzm" maxlength="4" value="验证码" eg="验证码" id="loginyzm" onblur="onblursLoginYzm($(this))" />
+                    </div>
+                    <div class="yzm_H_item">
+                        <a onclick="changVCode()" class="yzm_H">换</a><img onclick="" id="" class="loginCapt" src="images/GetValidateCode.jpg" />
+                        <span class="errorloginyzm error_info" style="display:none;"></span>
+                    </div>
+
+                </div>
+                <div class="input_item">
+                    <input type="checkbox" name="autologin" value="ON" class="loginCheck" id="autologin" checked="checked" style="display: none" /><i class="loginChk checked" name="loginChk"></i><span class="autoTxt">7天自动登录</span>
+                    <a href="javascript:;" class="login_wjmm">忘记密码?</a>
+                </div>
+                <div class="input_item">
+                    <input type="button" class="loginBtn" onmousedown="LoginFormSubmit($(this));" value="登  录" />
+                </div>
+                <div class="input_item f-tac f-pb30">
+                    <a href="javascript:void(0)" class="iconQQ" onclick="openQQ();"></a>
+                    <a href="javascript:void(0)" class="iconWX" onclick="openWeiXin();"></a>
+                    <a href="javascript:void(0)" class="iconWB" onclick="openWeiBo();"></a>
+                    <a href="javascript:void(0)" class="iconZFB" onclick="openAliPay();"></a>
+                </div>
+            </div>
+            <div class="login_validate loginPhone_validate" style="display:none;">
+                <div class="input_item">
+                    <i class="icon_un"></i>
+                    <input type="text" name="Loginphone" value="请输入手机号" eg="请输入手机号" class="loginPhone" maxlength="11" onblur="onblursLoginPhone($(this))" />
+                    <span class="error_info errorloginPhone" style="display:none;"></span>
+                </div>
+                <div class="input_item" >
+                    <div class="icon_yzm_item">
+                        <i class="icon_yzm"></i>
+                        <input type="text" name="yanzhengma" class="loginyzm" maxlength="4" value="验证码" eg="验证码" id="loginyzmPhone"   />
+                    </div>
+                    <div class="yzm_H_item">
+                        <a onclick="changVCodePhone()" class="yzm_H">换</a><img id="" class="loginCapt" src="images/GetValidateCode.jpg" />
+                        <span class="errorloginyzm error_info" style="display:none;"></span>
+                    </div>
+
+                </div>
+                <div class="input_item">
+                    <div class="icon_dx_item">
+                        <i class="icon_dx"></i>
+                        <input type="text" name="identCode" class="loginCode" value="请输入验证码" eg="请输入验证码" />
+                    </div>
+                    <div class="login_sendCode">
+                        <input type="button" name="getYzm"  value="发送短信验证码" />
+                    </div>
+                    <span class="error_info errorloginCode" style="display:none;"></span>
+                </div>
+                <div class="input_item">
+                    <span class="readTxt">阅读并接受<a href="javascript:;" target="_blank" class="color2">《一幅图用户协议》</a></span>
+
+                </div>
+                <div class="input_item">
+                    <span class="Login_Uname" style="display:none;">您的手机号码尚未注册，点击注册将自动注册一幅图账号并与此手机号绑定</span>
+                    <input type="button" class="PhoneloginBtn" onmousedown="LoginPhoneSubmit($(this));" value="登  录" />
+                    <input type="button" style="display:none;" class="PhoneRegBtn" onmousedown="RegPhoneSubmit($(this));" value="注  册" />
+                </div>
+                <div class="input_item f-tac f-pb30">
+                    <a href="javascript:void(0)" class="iconQQ"></a><a href="javascript:void(0)" class="iconWX"></a><a href="javascript:void(0)" class="iconWB"></a><a href="javascript:void(0)" class="iconZFB"></a>
+                </div>
+            </div>
+            <div class="login_change">
+                <p>还没有一幅图账号？</p>
+                <a href="javascript:void(0)">注  册</a>
+            </div>
+        </div>
+        <div class="login_right">
+            
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
