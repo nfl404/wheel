@@ -1,0 +1,127 @@
+
+/*页首、页脚CSS样式*/
+body {
+	/*padding-top: 50px;*/
+	/*padding-bottom: 40px;*/
+	color: #5a5a5a;
+}
+
+.theme{
+	background:#005197;
+	/*background:#d71920;*/
+	/*background:#d30a1c;*/
+}
+
+/*############页首###############*/
+
+/*顶部、logo*/
+.top{
+	width:100%;
+	background:#F6F6F6;
+}
+.mail{
+	float:right;
+	color:#666;
+}
+.phone{
+	color:#666;
+}
+.ant:hover{
+	text-decoration:none;
+}
+.title-logo{
+	margin-top:30px;
+	margin-bottom:40px;
+}
+
+/*导航条*/
+.navbar-default{
+	margin-bottom:0px;
+	border:0px;
+	/*border-bottom:3px solid #005197;*/
+	background-color:#e7e7e7;
+}
+.navbar-default .navbar-nav .active a, 
+.navbar-default .navbar-nav .active a:hover, 
+.navbar-default .navbar-nav .active a:focus{
+	background-color:#005197;
+	color:#fff;
+}
+.navbar-default .navbar-nav li.open a.on{
+	color:#fff;
+	background-color:#005197;
+}
+.navbar-default .navbar-nav li ul a:hover{
+	color:#fff;
+	background-color:#005197;
+}
+.dropdown-menu{
+	padding:0px;
+}
+.dropdown-menu li a{
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#777;
+}
+.nav-top{
+	width:12%;
+	text-align:center;
+}
+.line{
+	height:3px;
+	width:100%;
+}
+
+
+/*##########页脚##########*/
+/*网站地图*/
+.web-footer{
+	width:100%;
+	margin-top:30px;
+}
+#map-footer{
+	background-color:#3A3A3A;
+}
+#map-footer dl{
+	text-align:center;
+	margin-top:40px;
+}
+#map-footer dt{
+	padding:3px;
+	color:#fff;
+}
+#map-footer dd{
+	padding:3px;
+	
+}
+#map-footer p{
+	margin-top:20px;
+	margin-bottom:10px;
+	color:#fff;
+	font-size:16px;
+}
+#map-footer a{
+	color:#A6A6A6;
+	font-size:13px;
+}
+#map-footer a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+#wx{
+	text-align:center;
+}
+
+/*底部版权*/
+#patent-footer{
+	text-align:right;
+	background-color:#1A1A1A;
+}
+#patent-footer p{
+	margin-top:10px;
+	padding-right:80px;
+	color:#8d8d8d;
+	font-size:13px;
+}
+
+

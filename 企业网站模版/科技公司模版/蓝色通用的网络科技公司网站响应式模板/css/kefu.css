@@ -1,0 +1,40 @@
+img{border:0}
+*{margin:0;padding:0}
+ul{list-style:none}
+.header_l img{height:65px;margin-top:10px}
+select,input,img,select{vertical-align:middle}
+a{text-decoration:none;cursor:pointer;font-weight:normal;}
+a:hover{color:#0f91ed}
+
+.rides-cs {  font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 3; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #333;font-weight:600; line-height:24px;padding:5px;text-align:center;}
+.rides-cs .cn ul {padding:0px;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;border-bottom: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:2; top:25px; left: 0;  background-image: url(../images/shopnc.png); background-repeat: no-repeat; display:block;  height: 155px; padding: 8px;}
+.rides-cs .btnOpen { background-position: -410px 0;}
+.rides-cs .btnCtn { background-position: -450px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+
+@media screen and (min-width:200px) and (max-width:699px){
+.rides-cs {height:165px; font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 3; border-radius:6px 0px 0 6px;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;height:156px;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px;}
+.rides-cs .floatL { width: 15px; float:left; position: relative; z-index:1;margin-top: 21px;height: 100px;}
+.visible-mobile{display:block;}
+.floatL span{display:inline-block; margin-left:2px; margin-top:20px;}
+}
+@media screen and (min-width:700px){
+.rides-cs {height:246px;  font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 3; border-radius:6px 0px 0 6px;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px; height:180px;margin-top:28px;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top: 21px;height: 181px;}
+.visible-mobile{display:none;}
+.floatL span{display:none;}
+}
