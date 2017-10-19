@@ -1,0 +1,151 @@
+.memberLogin .edit_contentbox ul.edit_content {
+    padding: 0;
+}
+.memberLogin .editor-fnblock {
+    padding: 0 0 14px 20px;
+}
+.memberLogin .editor-fnblock .title{
+    width: 165px;
+    margin-left: 12px;
+}
+.memberLogin .borderPosition .direction {
+    margin-left: 4px;
+}
+
+.login_done  [data-elementtype=memberLogin],.login_done [data-elementtype=memberLoginWX]{
+    display: none!important;
+}
+/*.login_done .member-regist{*/
+    /*display: none!important;*/
+/*}*/
+
+.memberLogin .edit_direction, .memberLogin .direction {
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.memberLogin .direction.active span {
+    border: none;
+    background: #59c4ff url(../images/duoxuan.png) no-repeat center center;
+}
+
+.memberLogin .direction span, .memberLogin .edit_direction span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 2px 5px 0 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+
+.memberLogin .edit3 label {
+    margin-bottom: 0;
+}
+.memberLogin  .editor-fnblock  span.name{
+    color: #333;
+}
+.wqdDMembers,.wqdelementEdit a.wqd-members{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2dbce6;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+}
+.wqdelementEdit a.wqd-members{
+    border-color: #769ade;
+    border-radius: 5px;
+}
+ .wqdDMembers{
+    width: 140px;
+    height: 36px;
+    border-color: #769ade;
+    border-radius: 5px;
+}
+ .wqdDMembers em,.wqdelementEdit a.wqd-members em{
+    font-style: normal;
+    font-size: 14px;
+    color: #769ade;
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.wqdComponents ul li.wqdDragMemberLoginD {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.wqdComponents ul li.wqdDragMemberLoginD:first-child{
+    margin: 0 14px 10px 5px;
+}
+
+.wqdDMembers{
+    width: 140px;
+    height: 36px;
+    border-color: #769ade;
+    border-radius: 5px;
+
+}
+.wqdDMembers i{
+    display: inline-block;
+}
+.wqdDMembers i img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.wqdDMembers em{
+    display: inline-block;
+    color: #769ade;
+}
+.elementlist-wqdMemberOther{
+    padding-left: 5px;
+}
+.elementlist-wqdMemberOther li{
+    margin-right: 39px;
+}
+.elementlist-wqdMemberOther li:nth-child(3){
+    margin-right: 0;
+}
+.elementlist-wqdMemberOther .wqdDragElement{
+    width: auto; 
+}
+.elementlist-wqdMemberOther .wqdMemberWX{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.elementlist-wqdMemberOther svg{
+    height: 100%;
+    width: 100%;
+}   
+.wqdelementEditBox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.wqdelementEdit a.wqd-members i{
+    width: 16px;
+    height: 19px;
+    position: absolute;
+    left: 25px;
+    top: 9px;
+}
+.elementlist .wqdDragElement.de-img-gray svg>*{
+    fill:#ddd;
+}
+
+

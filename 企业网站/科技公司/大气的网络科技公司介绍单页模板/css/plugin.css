@@ -1,0 +1,241 @@
+﻿/*此样式表 pc、host环境均使用*/
+/* 组件相关css */
+/*百度分享插件*/
+.bd_weixin_popup_foot{ display:none!important;}
+#bdshare_weixin_qrcode_dialog{ height:270px!important;}
+#J_qr_code_share{width:260px;height:260px;left:50%!important;}
+@media (max-width: 991px){
+	#J_qr_code_share{width:260px;height:260px;top:30%!important;left:50%!important;}
+}
+/*日历插件、、刘瑞虎*/
+.date_picker{width:226px;background: #fefefe;border: 1px solid #bbb;font-size:14px;color: #333;padding:7px;border-radius:3px; }
+/*---------------------------------------demo css--------------------------------------------*/
+.date_selector, .date_selector *{width: auto;height: auto;border: none;background: none;margin: 0;padding: 0;text-align: left;text-decoration: none;font:12px/1.5 Arial;}
+.date_selector{background:#fbfbfb;border: 1px solid #ccc;padding:17px 10px 10px;margin:0;margin-top:-1px;position: absolute;z-index:100000;display:none;border-radius: 3px;box-shadow: 0 0 5px #aaa;box-shadow:0 2px 2px #ccc; width:240px; }
+.date_selector_ieframe{position: absolute;z-index: 99999;display: none;}
+.date_selector .nav p{clear: none;}
+.date_selector .month_nav, .date_selector .year_nav{margin: 0 0 3px 0;padding: 0;display: block;position: relative;text-align: center;}
+.date_selector .nav{width: 17.5em;}
+.date_selector .month_nav{float: left;width: 55%;}
+.date_selector .year_nav{float: right;width: 42%;margin-right: -8px;}
+.date_selector .month_name, .date_selector .year_name{font-weight: bold; background-image:none; position: relative; display:inline-block; width: auto; height:auto; top: 0; line-height: 0;  }
+.date_selector .button{display:inline-block; position: absolute;width:18px;height:18px;line-height:16px;font-weight:bold;color:#5985c7;text-align: center;font-size:12px;overflow:hidden;border: 1px solid #ccc;border-radius:2px;}
+.date_selector .button:hover, .date_selector .button.hover{background:#5985c7;color: #fff;cursor: pointer;border-color:#3a930d;}
+.date_selector .prev{left: 0;}
+.date_selector .next{right: 0;}
+.date_selector table{border-spacing: 0;border-collapse: collapse;clear: both;margin: 0; width:220px;}
+.date_selector th, .date_selector td{width: 2.5em;height: 2em;padding: 0 !important;text-align: center !important;color: #666;font-weight: normal;}
+.date_selector th{font-size: 12px;}
+.date_selector td{border:1px solid #f1f1f1;line-height: 2em;text-align: center;white-space: nowrap;color:#5985c7;background: #fff;}
+.date_selector td.today{background: #eee;}
+.date_selector td.unselected_month{color: #ccc;}
+.date_selector td.selectable_day{cursor: pointer;}
+.date_selector td.selected{background:#2b579a;color: #fff;font-weight: bold;}
+.date_selector td.selectable_day:hover, .date_selector td.selectable_day.hover{background:#5985c7;color: #fff;}
+/* 导航设置样式：黄剑剑*/
+.italic{font-style: italic;}
+#HTMLDATA .wqdSubnavShow{display:block !important;}
+.wqdLogoCenteros{margin:0 15px;}
+.wqdLogoLeftos{float: left !important;}
+.wqdLogoTopos{float: none !important; text-align: center !important;font-size: 0;margin-bottom: 10px;}
+.wqdLogoTopos .wqdLogoBoxos{display: inline-block !important; margin:15px 0;}
+.wqdNavTopos{position: absolute !important; top:50px;z-index: 9;width: 100%;}
+.wqdView .wqdAreaView .wqdNavTopos{left: 50%;-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);-o-transform: translateX(-50%);transform: translateX(-50%);}
+.wqdNavRightos{float: right !important;}
+.wqdNavCenteros, .wqdNavBottomos{float: none !important;text-align: center;}
+.wqdNavCenteros .navbar-nav, .wqdNavBottomos .navbar-nav{float: none !important;text-align: center !important;}
+
+.wqdPhoneNav .wqdNavList{background-color: #fff;}
+
+.wqdIphoneView .wqdNavTopos{position: relative !important;top:0;}
+.wqdIphoneView .wqdLogoLeftos, .wqdLogoTopos{position: relative !important;z-index: 10;float: left !important;margin-bottom: 0;}
+.wqdIphoneView .wqdLogoCenteros{position: absolute !important;top: 0 !important;left: 0 !important;}
+.wqdIphoneView .wqdNavRightos{float: none !important;}
+
+/* 侧栏导航：黄剑剑*/
+.sideNavFloat{position: fixed!important;}
+.sideNavFixed{position: fixed !important;}
+.wqdNavButton{display: none;position: fixed;z-index: 99;cursor: pointer;width: 48px;height: 44px;text-align: center;line-height: 44px;border-radius: 4px;font-size: 26px;margin: 32px 0 0 32px;}
+.wqdNowidth{width: 0px !important;overflow: hidden;}
+.wqdIphoneView .wqdNowidth{width: 100%!important;overflow: auto;}
+.wqdIphoneView .wqdNavButton{display: none !important;}
+.wqdIphoneView .sideNavFloat, .wqdIphoneView .sideNavFixed{position: relative!important;}
+/*导航控件-手机*/
+.wqdPhoneNav .wqdTopNavbox{top: 100% !important;}
+.wqdInlineMenu .wqdNavWrap .wqdNavList .wqdNavLi>a{display: inline-block;}
+.wqdPhoneNav .wqdNavList{background-color: #fff;}
+.wqdPhoneNav .wqdNavList .wqdNavLi{}
+.wqdPhoneNav .wqdNavList .wqdNavLi:first-child{margin-top: 0;}
+.wqdPhoneNav .wqdTopNavbox{z-index: 30 !important;}
+.wqdPhoneNav .wqdPhoneNavBtn{width: 100%;height: 100%;text-align: center;cursor: pointer;}
+.wqdPhoneNav .wqdPhoneNavBtn svg{fill:#333;}
+.wqdPhoneNav .wqdTopNavbox .resizeT, .wqdPhoneNav .wqdTopNavbox .resizeLT, .wqdPhoneNav .wqdTopNavbox .resizeTR{display: none;}
+/*导航控件：黄剑剑*/
+.wqdCommonNav .wqdTopNavbox > .wqdelementEditBox{overflow:hidden !important;}
+.wqdTopNavWrap, .wqdSideNavWrap, .wqdPhoneNav{z-index: 6;}
+.wqdNavWrap, .wqdNavWrap .wqdNavList{width: 100%;height: 100%;}
+.wqdNavWrap .wqdNavList{font-size: 0;}
+.wqdTopNavWrap .wqdNavList .wqdNavLi{display: inline-block;}
+.wqdNavWrap .wqdNavList .wqdNavLi>a{display: block;font-size: 14px;padding: 10px 15px;color: #333;cursor: pointer;border-color:#333;}
+.wqdNavWrap .wqdNavList .wqdNavLi>a:hover{border-color:#fff;}
+.wqdSideNavWrap .wqdNavWrap .wqdNavList .wqdNavLi>a{text-align: center;}
+.wqdAddsecondnav{position: absolute;z-index: 99;display: block;background-color: rgba(255,255,255,0.8); text-align: center;color: #1ec1fd;font-size: 20px;font-weight: 700;border:1px dashed #1ec1fd;border-radius: 3px;}
+.wqdAddsecondnav:hover{color: #1ec1fd;}
+.wqdSecondNav{position: relative;width: 100%;height: 100%;}
+.wqdSideNavWrap{position: fixed;height: 100%;background-color: #eee;}
+.wqdSecondNavbox{z-index: 30 !important;}
+.wqdSideNavButton{display: none;position: fixed;z-index: 99;background-color:#eee;color:#333;cursor: pointer;width: 48px;height: 44px;text-align: center;line-height: 44px;border-radius: 4px;border-color:#333;font-size: 26px;margin: 32px 0 0 32px;box-sizing: content-box;-webkit-box-sizing: content-box;}
+#HTMLDATA .wqdSecondNav:before, .wqd-carouseOverlay .wqdSecondNav:before{content: '';position: absolute;z-index: 0;width: 100%;height: 100%;left: 0;top: 0;border:1px dashed #1ec1fd;}
+
+.wqdTopNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeT,
+.wqdTopNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeLT,
+.wqdTopNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeTR{display: none;}
+.wqdSideNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeL,
+.wqdSideNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeLT,
+.wqdSideNavWrap .wqdSecondNavbox > .wqdelementEditBox > .resizeLB{display: none;}
+/*导航控件-编辑按钮*/
+.wqdNavMenuWrap{position: absolute;z-index: 9999;width: 120px;height:32px;font-size: 0;}
+.wqdNavMenuWrap ul li{display: inline-block;margin-left: 10px;width: 30px;height:30px;line-height: 30px;border-radius: 50%;font-size: 12px;background-color: #fff;text-align: center;box-shadow: 0px 0px 6px #ccc;cursor: pointer;overflow: hidden;}
+.wqdNavMenuWrap ul li:first-child{margin-left: 0;}
+.wqdNavMenuWrap ul li .navMenuText{display: none;color: #fff;}
+.wqdNavMenuWrap ul li .navMenuBtn{display:block; background: url(../images/btn.png) no-repeat;width: 30px;height: 30px;}
+.wqdNavMenuWrap ul li .navBtn1{background-position: 5px 6px;}
+.wqdNavMenuWrap ul li .navBtn2{background-position: 5px -517px;}
+.wqdNavMenuWrap ul li .navBtn3{background-position: 5px -74px;}
+.wqdNavMenuWrap ul li:hover{background-color: #49a2d2;}
+.wqdNavMenuWrap ul li.wqdNavMenudelete:hover{background-color: #ff6a6a;}
+.wqdNavMenuWrap ul li:hover .navMenuBtn{display: none;}
+.wqdNavMenuWrap ul li:hover .navMenuText{display: block;}
+
+/* --导航动画-- */
+@keyframes wqdNavAnima {
+	0% {opacity: 0;margin-top:-50px;}
+	100% {opacity: 1;margin-top:0;}
+}
+@-webkit-keyframes wqdNavAnima {
+	0% {opacity: 0;margin-top:-50px;}
+	100% {opacity: 1;margin-top:0;}
+}
+@-moz-keyframes wqdNavAnima {
+	0% {opacity: 0;margin-top:-50px;}
+	100% {opacity: 1;margin-top:0;}
+}
+@-o-keyframes wqdNavAnima {
+	0% {opacity: 0;margin-top:-50px;}
+	100% {opacity: 1;margin-top:0;}
+}
+/*轮播图组件:黄剑剑*/
+.wqdCarousel{position: relative;width: 100%;height:100%;overflow: hidden;}
+.wqdCarousel .carousel-control{z-index: 99;}
+.wqdCarousel .carousel-inner, .wqdCarousel .carousel-inner .item{width: 100%;height: 100%;}
+.wqdCarousel .carousel-inner .item{position:absolute;}
+.wqdCarousel .carousel-inner .item .bannerContainer{position: relative;width: 100%;height: 100%;background:no-repeat center center / cover;}
+.wqdCarousel .carousel-control{display:none;position: absolute;z-index:50; opacity: 0.5; width: 50px;height: 50px;line-height: 50px;text-align: center;padding: 5px;top: 50%;margin-top: -25px;/* background-color: #ccc; */cursor: pointer;}
+.wqdCarousel:hover .carousel-control{display: block;}
+.wqdCarousel .carousel-control.left{left: 1%;}
+.wqdCarousel .carousel-control.right{right: 1%;}
+.wqdCarousel .carousel-indicators{position: absolute;z-index: 50;width: 90%;left: 50%;margin-left: -45%;text-align: center;font-size: 0;bottom: 8px;}
+/*数量下标*/
+.wqdCarousel .carousel-indicators.left{text-align: left}
+.wqdCarousel .carousel-indicators.center{text-align: center}
+.wqdCarousel .carousel-indicators.right{text-align: right}
+.wqdCarousel .carousel-indicators.del{display:none;}
+/*按钮切换*/
+/*.wqdCarousel .carousel-control.btn1{border-radius:200px;}
+.wqdCarousel .carousel-control.btn2{border-radius:0px;}
+.wqdCarousel .carousel-control.btn3{top:83%;border-radius:200px;}
+.wqdCarousel .carousel-control.btn4{top:83%;border-radius:0px;}
+.wqdCarousel .carousel-control.btn5{display:none!important;}*/
+
+.wqdCarousel .carousel-control.btn1{top:50%;}
+.wqdCarousel .carousel-control.btn2{top:83%;}
+.wqdCarousel .carousel-control.btn3{display:none!important;}
+.wqdCarousel .carousel-control path {fill: #fff; }
+.wqdCarousel .carousel-control:hover path {fill: #fff; }
+.wqdelementEditBox .carousel-indicators li{display: inline-block;width: 20px;height: 20px;background-color: rgba(0,0,0,0); border-radius: 100px;cursor: pointer;margin: 3px;}
+.wqdCarousel .carousel-indicators li.active{width: 20px;height: 20px;background-color: #9BDCFF;border:2px solid #9BDCFF;}
+.wqdCarousel .carousel-indicators li:first-child{margin-left: 0;}
+.wqdCarousel .indicator_7 li:first-child{margin-left: 3px;}
+
+.wqdCarousel .indicator_6 li,.wqdCarousel .indicator_7 li{border:1px solid #ccc;}
+.wqdCarousel .indicator_6 li.active,.wqdCarousel .indicator_7 li.active{border:1px solid #9bdcff;}
+/* 轮播图动画：黄剑剑*/
+.carousel-inner>.item{-moz-backface-visibility: hidden;-o-backface-visibility: hidden;backface-visibility: hidden;-webkit-transition: -webkit-transform .6s ease-in-out;-moz-transition: -moz-transform .6s ease-in-out;-o-transition: -o-transform .6s ease-in-out;transition: transform .6s ease-in-out;}
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right{left: 0;-webkit-transform: translate3d(0,0,0);-moz-transform: translate3d(0,0,0);-o-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+.carousel-inner>.item.active.left, .carousel-inner>.item.prev{left: 0;-webkit-transform: translate3d(-100%,0,0);-o-transform: translate3d(-100%,0,0);-moz-transform: translate3d(-100%,0,0);transform: translate3d(-100%,0,0);}
+.carousel-inner>.item.active.right, .carousel-inner>.item.next{left: 0;-webkit-transform: translate3d(100%,0,0);-o-transform: translate3d(100%,0,0);-moz-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
+
+.wqdCarousel .wqdSwitch1, .wqdCarousel .wqdSwitch2, .wqdCarousel .wqdSwitch3, .wqdCarousel .wqdSwitch4, .wqdCarousel .wqdSwitch5{-webkit-transition-property: -webkit-transform!important;-moz-transition-property: -moz-transform!important;-o-transition-property: -o-transform!important;transition-property: transform!important;}
+.wqdCarousel .wqdDisappear{-webkit-transition-property: opacity!important;-moz-transition-property: opacity!important;-o-transition-property: opacity!important;transition-property: opacity!important;}
+/* 动画1 */
+.wqdCarousel .wqdSwitch1.active.left, .wqdCarousel .wqdSwitch1.prev {-webkit-transform: translate3d(-100%,0,0);-moz-transform: translate3d(-100%,0,0);-o-transform: translate3d(-100%,0,0);transform: translate3d(-100%,0,0);}
+.wqdCarousel .wqdSwitch1.active.right, .wqdCarousel .wqdSwitch1.next{-webkit-transform: translate3d(100%,0,0);-moz-transform: translate3d(100%,0,0);-o-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
+/* 动画2 */
+.wqdCarousel .wqdSwitch2.active.left, .wqdCarousel .wqdSwitch2.prev {-webkit-transform: translate3d(0,-100%,0);-moz-transform: translate3d(0,-100%,0);-o-transform: translate3d(0,-100%,0);transform: translate3d(0,-100%,0);}
+.wqdCarousel .wqdSwitch2.active.right, .wqdCarousel .wqdSwitch2.next{-webkit-transform: translate3d(0,100%,0);-moz-transform: translate3d(0,100%,0);-o-transform: translate3d(0,100%,0);transform: translate3d(0,100%,0);}
+/* 动画3 */
+.wqdCarousel .wqdSwitch3.active.left, .wqdCarousel .wqdSwitch3.prev {-webkit-transform: translate3d(0,-100%,0);-moz-transform: translate3d(0,-100%,0);-o-transform: translate3d(0,-100%,0);transform: translate3d(0,-100%,0);}
+.wqdCarousel .wqdSwitch3.active.right, .wqdCarousel .wqdSwitch3.next{-webkit-transform: translate3d(100%,0,0);-moz-transform: translate3d(100%,0,0);-o-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
+/* 动画4 */
+.wqdCarousel .wqdSwitch4.active.left, .wqdCarousel .wqdSwitch4.prev {-webkit-transform: translate3d(100%,0,0);-moz-transform: translate3d(100%,0,0);-o-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
+.wqdCarousel .wqdSwitch4.active.right, .wqdCarousel .wqdSwitch4.next{-webkit-transform: translate3d(100%,0,0);-moz-transform: translate3d(100%,0,0);-o-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
+/* 动画5 */
+.wqdCarousel .wqdSwitch5.active.left, .wqdCarousel .wqdSwitch5.prev {-webkit-transform: translate3d(0,-100%,0);-moz-transform: translate3d(0,-100%,0);-o-transform: translate3d(0,-100%,0);transform: translate3d(0,-100%,0);}
+.wqdCarousel .wqdSwitch5.active.right, .wqdCarousel .wqdSwitch5.next{-webkit-transform: translate3d(0,-100%,0);-moz-transform: translate3d(0,-100%,0);-o-transform: translate3d(0,-100%,0);transform: translate3d(0,-100%,0);}
+@media (max-width: 767px){
+	.wqdCarousel .carousel-control{display: none !important;}
+}
+/*地图组件:黄剑剑*/
+.wqdMapGroup, .wqdMapbox{position: relative;width: 100%;height: 100%;}
+#HTMLDATA .wqdMapbox{background: url("../images/mapbg.jpg") no-repeat center center;background-size: cover;}
+/*表单提交后提示弹窗的样式*/
+#cboxOverlay,#colorbox{ z-index: 9998; }
+#cboxOverlay{ position: fixed;width: 100%;height: 100%;background-color: #000;left:0; top:0; }
+.colbox{box-sizing:border-box; width:300px; padding:46px 55px; background-color:#fff;border-radius: 8px; overflow:hidden;  }
+.colbox i.tag{ float:left; display:inline-block; width:50px; height: 58px; background:url(../images/success_error.png) no-repeat; vertical-align: middle;  }
+.colbox i.tag.success{ background-position:0 4px;  }
+.colbox i.tag.error{ background-position:-50px 4px;  }
+.colbox .point{ display:inline-block; vertical-align: middle; float: left; margin-left: 13px; }
+.colbox .point h2{ font-size: 24px; color:#333; }
+.colbox .point.success h2{ line-height: 58px; }
+.colbox .point.error h2{ line-height: 35px; }
+.colbox .point.error p{ line-height: 23px;font-size: 12px; color:#666; }
+/************  客服代码样式  *************/
+div.fa-phone{font-size:24px;color:#fff;margin-left:10px;margin-top:9px;float:left;}
+#wqdShowQQD .serQQ{position:fixed;z-index:5;right:-40px;top:50%;margin-top:-20px;width:40px;height:40px;background-color:#676669;border-top-left-radius:4px;border-bottom-left-radius:4px;}
+#wqdShowQQD .serQQ:hover{background-color:#504f55;}
+#wqdShowQQD .uhide {display:none;}
+#wqdShowQQD .icon{background:url(../images/icon25.png) no-repeat;width:26px;height:20px;margin-left:10px;margin-top:12px;display:inline-block;}
+.ifshow{right: 0px !important;-moz-transition: 0.35s; -o-transition: 0.35s; -webkit-transition: 0.35s; transition: 0.35s;}
+.noshow{right: -105px !important;-moz-transition: 0.35s; -o-transition: 0.35s; -webkit-transition: 0.35s; transition: 0.35s;}
+.noshow.on {right:0 !important;}
+#wqdShowQQD .serShow{position:fixed;position:fixed;background-color:#504f55;width:105px;z-index:9;right:-105px;top:50%;margin-top:-20px;border-top-left-radius:4px;border-bottom-left-radius:4px;}
+#wqdShowQQD .serShow:hover {right: 0px !important;-moz-transition: 0.35s; -o-transition: 0.35s; -webkit-transition: 0.35s; transition: 0.35s;}
+#wqdShowQQD .serShow .header{height:40px;max-height:40px;border-bottom:1px solid #6c6b70;}
+#wqdShowQQD .serShow span{display:inline-block;color:#fff;line-height:40px;font-size:14px;padding-left:9px;}
+#wqdShowQQD .down{padding:15px 12px 10px;}
+#wqdShowQQD .down ul,li{margin:0;padding:0;}
+#wqdShowQQD .down ul li{list-style:none;margin-bottom:7px;max-width: 80px;overflow: hidden;}
+#wqdShowQQD .down ul li:last-child{margin-bottom:4px;}
+.shuoming div{line-height:20px;}
+#wqdShowQQD .down .shuoming {font-size: 12px; color: #999; word-wrap:break-word;}
+#wqdShowQQD .down ul li>a img{max-width: 100%;}
+/************  客服代码样式 end  *************/
+/* 关联容器：黄剑剑 */
+.groupContainerOne .containerWarp, .freeContainerOne .containerWarp{background-color: rgba(207,228,228,0.46);}
+.groupContainerTwo .containerWarp, .freeContainerTwo .containerWarp{background-color: rgba(190,161,167,0.46);}
+.containerWarp{position:relative;width: 100%;height: 100%;}
+#HTMLDATA .containerWarp:before, .wqd-carouseOverlay .containerWarp:before{content: '';position: absolute;z-index: 0;width: 100%;height: 100%;left: 0;top: 0;border: 1px dashed #1ec1fd;}
+.groupContainerTwo{display: none;z-index: 999 !important;}
+#HTMLDATA .groupContainerTwo.insideShow, .wqd-carouseOverlay .groupContainerTwo.insideShow{display: block;}
+
+
+
+
+
+
+
+
+
+
+

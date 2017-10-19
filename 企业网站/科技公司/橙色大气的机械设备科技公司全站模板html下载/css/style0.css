@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+/*对应颜色替换
+橙色｛显示：#feb65b 经过：#f3941c｝默认
+绿色｛显示：#b1d85c 经过：#8fcd09｝
+蓝色｛显示：#84c0f2 经过：#439de8｝
+灰色｛显示：#bfbdbd 经过：#989494｝
+红色｛显示：#f58384 经过：#eb6162｝
+黑色｛显示：#323d45 经过：#27333b｝
+亮蓝｛显示：#457ce6 经过：#316ee4｝
+亮红｛显示：#ff0c8a 经过：#e60077｝
+浅蓝｛显示：#8cbcd1 经过：#5fa2bf｝
+*/
+.suspend-item {background: url(../images/toolbar.png) no-repeat #feb65b;  display: block; width: 52px; height: 52px; margin-top: 1px; position: relative; -moz-transition: background-position 1s; -ms-transition: background-position 1s; -o-moz-transition: background-position 1s; -webkit-moz-transition: background-position 1s; -o-transition: background-position 1s; -webkit-transition: background-position 1s; transition: background-position 1s; }
+.suspend-item-item {background: url(../images/toolbar_2.png) no-repeat #feb65b;  display: block; width: 52px; height: 52px; margin-top: 1px; position: relative; -moz-transition: background-position 1s; -ms-transition: background-position 1s; -o-moz-transition: background-position 1s; -webkit-moz-transition: background-position 1s; -o-transition: background-position 1s; -webkit-transition: background-position 1s; transition: background-position 1s; }
+.service-QQ {box-shadow: 0 0 8px 0 #feb65b;}
+.suspend-item-weixin .suspend-layer { height: 140px; background-position: 0 0; overflow: hidden; box-shadow:0 0 5px #feb65b;}
+.suspend-item:hover{background-color:#f3941c;}
+.suspend-item-item:hover{background-color:#f3941c;}
+
+
+

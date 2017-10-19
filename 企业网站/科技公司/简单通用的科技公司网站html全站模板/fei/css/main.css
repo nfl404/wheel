@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+
+/**************main**************/
+.main_banner{ 
+	clear: both; 
+	overflow: hidden; 
+	height: 530px; 
+	background-position: center 0; 
+	background-repeat: no-repeat; 
+	padding-bottom: 20px; 
+	position: relative;
+}
+.main_banner img{
+	position: absolute;
+	top: 455px;
+	left: 418px;
+}
+.main_menu{ padding-top: 306px; clear: both; overflow: hidden; text-align: center;}
+.main_menu a{ 
+	display: inline-block; 
+	height:89px; width: 81px; 
+	background: url("../img/main_banner1.png") no-repeat center bottom; 
+	padding:17px 8px; overflow: hidden; 
+	line-height: 16px; 
+	margin-bottom: 12px;
+}
+.main_menu a table{ width: 81px; height: 89px; border-radius: 50%; overflow: hidden; vertical-align: middle;}
+.main_menu a.hover,.main_menu a:hover{
+ 	height:114px; width: 106px; 
+ 	padding:0 8px 22px;font-size: 16px;
+ 	font-weight: bold;color: #fff; 
+ 	background: url("../img/main_banner2.png") no-repeat center bottom; 
+ 	margin: 0; 
+ 	line-height: 20px;
+}
+.main_menu a.hover table,.main_menu a:hover table{ width: 106px; height: 114px;}
+.beijing1{ padding: 0 60px; margin: 0 auto; width: 1070px; overflow: hidden; clear: both;}
+/**************分页**************/
+.page{ clear:both; overflow:hidden; padding:20px 10px; text-align:center;line-height:60px;}
+
+.page_prev,.page_next{ font-family:"宋体"}
+.page a,.page span{ display:inline-block; overflow:hidden;  width:60px; height:60px; }
+.page .thisclass{ color:#fff; background:#3464ab !important; border-radius:50px;}
+
+/**************footer**************/
+footer{padding: 30px 0; margin: 0 auto; width: 1190px;}
+footer p{float: left; display: inline-block;}
+footer span{ float: right;}
+footer span em{font-style: normal; margin: 0 5px;}
+footer.foot-hover{ position: fixed; bottom: 0;z-index: 6; left: 50%; margin-left: -595px;}
+/**************解决方案**************/
+
+.case li{ clear: both; overflow: hidden; border-bottom: 1px dotted #bbb; padding:20px 0 25px; margin-bottom: 10px;}
+.case li em{
+	float: left; /*border: 1px solid #cbcbcb; padding: 4px;*/ overflow: hidden; 
+	margin-right: 15px; 
+	display: inline-block; 
+	width:130px; 
+	background: #f1f1f1;
+}
+.case li em a{ display: block; overflow: hidden;}
+.case li em a img{ width: 100%;}
+.case_1{ overflow: hidden;}
+.case_1 h3{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;margin-top: -5px;}
+.case_1 span{ color: #999; display: block; clear: both; overflow: hidden; padding: 5px 0;}
+.case_1 p{ line-height: 22px; overflow: hidden; height: 44px;}
+.case li:hover{ color: #3464ab;}
+.case li:hover h3 a{ color: #3464ab;}
+.case li:hover em{ border-color: #3464ab;}
+.case_top{ clear: both; overflow: hidden; text-align: center; padding: 30px 0;}
+.case_top h1{ color: #1a6aaa;font-size: 24px;font-weight: lighter; line-height: 1.5; padding: 10px 0;}
+.case_top p{ font-family:"宋体"; color: #b0b0b0;}
+.case_article{ padding:30px 0; border: dotted #8c8c8c; border-width: 1px 0; line-height: 2.6;font-size: 14px;}
+.case_article img{ max-width: 100%;}
+.case1{ clear: both; overflow: hidden; padding: 20px 0; line-height: 2; color: #7e7e7e;}
+.case1 li{ clear: both;overflow: hidden;}
+.case1 li a{ color: #7e7e7e;}
+.case1 li a:hover{ color: #33a6df;}
+
+/**************产品**************/
+.product{ clear:both; overflow: hidden; padding: 15px 0;}
+.product dt{float: left; width:440px; margin-right: 35px; display: inline-block; overflow:hidden}
+.product dt img{ width: 100%;}
+.product dd{ overflow: hidden;}
+.product dd h3{ padding: 5px 0 15px; line-height: 1.5; color: #333;}
+.product_article{ clear:both; overflow: hidden; line-height: 2.6;font-size: 14px;}
+
+.product1{ clear: both; overflow: hidden; margin-top: 15px; background: url("../img/product1.png") repeat-x 0 0; height: 44px;}
+.product1 li{float: left; width: 110px; text-align: center;float: left; line-height: 36px; padding-right:35px ;font-size: 14px;}
+.product1 li.hover{ line-height: 44px; background: url("../img/product1_1.png") no-repeat 0 0;font-weight: bold; color: #fff;}
+.product2{ clear: both; overflow: hidden; padding: 30px 0; line-height: 24px;font-size: 14px;}
+.product2 img{ max-width: 100%;}
+.product2 .product2_1{ clear: both; display: none; overflow: hidden;}
+/**************服务中心**************/
+.loaddown{ clear: both; overflow: hidden; padding: 15px 0 30px; line-height: 46px;font-size: 14px;}
+.loaddown li{ 
+	clear: both; overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
+	height: 46px; 
+	border-bottom: 1px dotted #a6a6a6; 
+	background: url("../img/loaddown1.jpg") no-repeat 0 center;
+	padding: 0 5px 0 15px;
+}
+.loaddown li a{ 
+	display: block;  padding-right:20px;
+	overflow:hidden; white-space: nowrap; 
+	text-overflow: ellipsis; 
+	background:url(../img/loaddown.png) no-repeat right center;
+	padding-left: 5px;
+}
+.service{ padding: 15px 0; line-height: 2.6;font-size: 14px;}
+.service img{ max-width: 100%;}
+/**************资讯中心**************/
+.news{ clear: both; overflow: hidden; padding: 15px 0 30px;}
+.news li{ border-bottom: 1px dotted #a6a6a6; clear:both; overflow: hidden;}
+.news_1{
+ 	background: url("../img/loaddown1.png") no-repeat 0 center; 
+ 	height:46px; overflow: hidden;
+    line-height: 46px; 
+ 	padding: 0 15px; cursor: pointer;
+ 	font-size: 14px;
+}
+.news_1 small{font-size: 12px;float: right; margin-left: 10px; color: #949494; display: inline-block; overflow: hidden;}
+.news_1 p{ overflow: hidden;white-space: nowrap; text-overflow: ellipsis;float: left; max-width: 80%;}
+.news_1 span{ margin: 0 5px;}
+.news_2{ clear: both; overflow: hidden; padding: 25px 0; color: #3464ab; display: none;}
+.news_2 em{
+	float: left; border: 1px solid #3464ab; 
+	padding: 4px; overflow: hidden; margin-right: 15px; 
+	display: inline-block; width:130px; 
+	background: #f1f1f1;
+}
+.news_2 em a{ display: block; overflow: hidden;}
+.news_2 em a img{ width: 100%;}
+.news_2 h3 a{ color: #3464ab; display: inline-block;}
+.news_2 h3 i{ margin: 0 5px;}
+.news li.news_fr .news_2{ padding-top: 10px;}
+
+/**************联系我们**************/
+.contact_top td,.contact_top th{ padding: 30px 0 40px; vertical-align: middle;}
+.contact_top th{ width:50%; text-align: left;}
+.contact_top th img{ width:400px;}
+.contact_top td{font-size: 14px;}
+.contact_top td p{ clear: both; overflow: hidden; padding-left: 30px;}
+.contact_top td p.con_1{ background: url("../img/contact_1.png") no-repeat 2px center;}
+.contact_top td p.con_2{ background: url("../img/contact_2.png") no-repeat 1px center;}
+.contact_top td p.con_3{ background: url("../img/contact_3.png") no-repeat 0 center;}
+
+.contact{ border: dotted #bbb; border-width: 1px 0; padding: 20px 0; clear: both; overflow: hidden;}
+.contact_wx{ float: right; width: 80px; display: inline-block; overflow:hidden; text-align: center; padding: 5px 0;}
+.contact_wx p img{ width: 100%; margin-bottom: 5px;}
+.contact_1{ overflow: hidden}
+.contact1{ padding: 5px 0; clear: both; overflow: hidden;}
+.contact1 dd{
+	float: left; width: 28%; margin:0 2.3% 30px 0; height:92px;
+	display: inline-block; overflow: hidden; 
+	background:url("../img/contact_1.png") no-repeat 5px 5px; 
+	padding-left:30px;
+}
+.contact1 dd h4{ clear: both; overflow: hidden; line-height: 26px; margin-bottom: 3px;}
+.contact1.contact2 dd{background: url("../img/contact_2.png") no-repeat 5px 5px;}
+.contact1 dt{ clear:both; overflow: hidden;  width: 100%;height: 1px;}
+.map{ clear: both; overflow: hidden; padding: 25px 0;}
+.height20{ *height: 20px;}
+
+
+
+.main_sousuo{ 
+	position: absolute;left: 50%; margin-left: -535px;
+	top: 505px;/* border: 1px solid #c0c0c0;*/ border-radius: 5px; 
+	padding:1px 1px;/*background: #f1f1f1;*/ font-size: 14px;line-height: 30px;
+	display: inline-block;
+}
+.main_sousuo input{
+	width: 300px;
+	line-height: 30px;
+	position: relative;
+	border: 1px solid #888888;
+	border-radius: 2px;
+}
+.main_sousuo button{
+	line-height: 28px;
+	width: 80px;
+	color: #fff;
+	background: #5599ff;
+	position: absolute;
+	top: 1.5px;
+	left: 222px;
+	border: none;
+	border-radius: 1px;
+	cursor:pointer;
+}
+.main_sousuo dt{ /*clear:both;  padding: 0 0 5px;*/overflow: hidden;float: left;margin-right: 15px; display: inline-block;}
+.main_sousuo form{float: left; *display: inline; max-width: 302px;}
+.main_sousuo dd{/* clear: both;*/ overflow:hidden;float: left;display: inline-block;}
+.main_sousuo1{
+	float: left; border: 1px solid #c0c0c0; 
+	background: #f1f1f1; 
+	line-height: 20px; 
+	height: 20px; 
+	padding: 0 10px;
+	width:240px;
+	 overflow: hidden; 
+	 display: inline-block;
+}
+.main_sousuo2{
+	float: right; 
+	background: url("../img/sousuo.jpg") repeat-x; 
+	height: 22px; 
+	padding: 0 5px; 
+	border-radius: 2px; 
+	overflow: hidden; 
+	color: #fff; 
+	cursor: pointer; 
+	border: 0;
+}
+
+.ppp{
+	width: 100%;
+	overflow: hidden;
+}
+.ppp p{
+	margin:0px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.xin_yi{
+	width: 1190px;
+	margin: 0 auto;
+}
+.xin_yi img{
+	display: block;
+	margin-left: 210px;
+	float: left;
+}
+.xin_er{
+	display: block;
+	margin-top: 20px;
+	margin-left: 60px;
+	float: left;
+}
+.xin_san{
+	width: 1190px;
+	margin: 0 auto;
+	clear: both;
+}
+.xin_san p{
+	margin-left: 250px;
+}
+.xin_san img{
+	margin-left: 250px;
+}
+.xin_wu{
+	background: url("../img/loaddown1.jpg") no-repeat 0 center; 
+	height:46px; 
+	overflow: hidden; 
+	line-height: 46px; 
+	padding: 0 15px; 
+	cursor: pointer;
+	font-size: 14px;
+}
+.xin_wu p{
+	float: left;
+	padding-left: 5px;
+} 
+ 
+.xin_wu span{
+	float: right;
+} 
+.qi_feng_yi{
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+	padding:30px 0px; 
+}
+.qi_feng_yi h1{
+	color: #1a6aaa;
+	font-size: 24px;
+	font-weight: lighter;
+	line-height: 1.5;
+	padding:10px 0px;  
+}
+.qi_feng_yi p{
+	font-family: "宋体";
+	color: #b0b0b0;
+}
+.qi_feng_er{
+	padding: 30px 0px;
+	border: dotted #8c8c8c;
+	border-width: 1px 0px;
+	line-height: 2.6;
+	font-size: 14px;  
+}

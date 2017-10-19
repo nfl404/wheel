@@ -1,0 +1,211 @@
+@charset "utf-8";
+ 
+body{ font-size:12px;color:#323232; line-height:1.8; min-width:1190px;font-family:"微软雅黑"; background: #eaeaea;padding:0;margin:0;  }
+
+html, body, div, span, applet, object, 
+iframe, h1, h2, h3, h4, h5, h6, p, 
+@charset "utf-8";
+
+
+blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  caption,  
+article, aside, canvas, details, embed, figure, figcaption, footer, 
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: none;}
+table,tbody, tfoot, thead, tr, th, td{margin: 0;padding: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol,ul,li{list-style-image:none;list-style-position:outside;list-style-type:none;}
+input{ padding:0; margin:0; font-family:"微软雅黑"; outline:none}
+img{ vertical-align: middle;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both; height:0px; width:0; margin:0; padding:0; border:none; overflow:hidden; }
+a{text-decoration:none; cursor:pointer; color:#323232;transition-property:box-shadow,color,background-color,border;transition-duration:.3s;}
+a:hover{ color:#33a6df}
+h1{ font-size:18px}
+h2{ font-size:18px}
+h3{ font-size:16px}
+h4{ font-size:14px}
+h5{ font-size:12px}
+
+
+
+.beijing{ padding:10px 0; clear:both; overflow: hidden;width:1190px; margin:0 auto}
+
+/**************头部**************/
+header{ 
+	background-color: #222222; 
+	clear: both; 
+	overflow: visible; height: 78px; 
+	position: absolute;left: 0; 
+	top: 0; width: 100%; 
+	z-index: 5;
+	min-width: 1190px;
+}
+header .beijing{ overflow: visible; padding: 0; position: relative;}
+header h2{float: left; margin:5px; display: inline-block; height: 65px; max-width:300px; overflow: hidden;}
+header h2 a{ display: table;vertical-align: middle; text-align: center; height:57px; max-width: 210px; overflow: hidden; }
+header h2 a em{display:table-cell ; vertical-align: middle; height: 57px;*display: block;*font-size:47px;}
+header h2 img{ max-width: 300px; max-height: 65px; margin-top:10px;}
+header ul{float: left; margin:20px 0 0 15px; display: inline-block;}
+header ul li{float: left;padding-left:10px;}
+header ul li .menu_1{ 
+	color: #fff;
+	font-size: 17px; 
+	padding: 0 16px 6px; 
+	display: block; 
+	line-height: 45px; 
+	position: relative;
+	z-index: 7; 
+	overflow: hidden;
+}
+header ul li .menu_1.menu_en1{ font-size: 16px; padding: 0 10px 6px;}
+header ul li.on .menu_1,header ul li .menu_1.hover{ color: #33a6df;}
+
+.menu_1 em{ 
+	position:absolute;
+	z-index: 8; 
+	background: url("../images/menu.png") no-repeat center bottom; 
+	width: 100%; 
+	bottom: 0; left: 0; 
+	height: 12px; 
+	display: none;
+}
+.menu{ 
+	position: absolute;
+	left: 230px; top:70px; 
+	background: url("../images/menu_1.png") repeat-x bottom #fff !important;
+	border: 1px solid #e7e7e7; width:830px; 
+	padding:20px 15px;box-shadow: 0 0 7px #737373; 
+	overflow: hidden; z-index: 6; 
+	display: none;
+}
+.menu_left{float: left; width:111px; overflow: hidden; display: inline-block;}
+.menu_left a{
+	float: left; width:62px; 
+	margin: 0 10px; display: inline-block; 
+	overflow: hidden; line-height: 36px; 
+	border-bottom: 1px dashed #ccc; 
+	background: url("../images/menu_2.png") no-repeat 0 17px; 
+	height: 36px; color: #054f90; 
+	padding-left: 8px;
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+}
+.menu_en .menu_left a{width: 100%;}
+.menu_left a:hover,.menu_left a.hover{ color: #ee7621;}
+.menu_right{ overflow: hidden; padding:0 10px;}
+.menu_right dl{ clear: both; overflow: hidden; display: none;}
+.menu_right dt{float: left; overflow: hidden; width:215px; margin-right: 30px; display: inline-block ;}
+.menu_right dt img{ width: 100%;}
+.menu_right dd{ overflow: hidden;}
+.menu_right1{ color: #868686; /*line-height: 2;*/ max-height:100px; overflow: hidden;}
+.menu_right2{ clear:both; overflow: hidden; margin-top:15px}
+.menu_right2 a{ 
+	color: #414141;
+	border: 1px solid #d2d2d2; 
+	border-radius:4px; 
+	background: url("../images/menu_3.png") repeat-x; 
+	line-height: 24px; 
+	height: 24px; 
+	overflow: hidden; 
+	padding: 0 10px; 
+	display: inline-block;
+}
+header ul li.on .menu_1 em,header ul li.on .menu{ display: block;}
+.weixin{float: left; margin-top: 27.5px; position: relative; margin-left: 170px;}
+.weixin span{ display: block; cursor: pointer; width: 18px; height: 18px;}
+.weixin img{ width: 100%; margin-bottom: -5px;}
+.weixin p{ position: absolute; right: 0; top:26px; left:-50px; padding: 5px; background: #fff; display: none; overflow: hidden; width: 120px;}
+.weixin a{ position: absolute; right: 0px; bottom: -7px; overflow: hidden; width: 120px; left: 30px; display: block; color: #fff;}
+.flag{float: right; margin-top: 20px; line-height: 45px;}
+.flag a{ color: #fff; margin: 0 5px 0 15px; display:inline-block; float: left; overflow: hidden;}
+.flag a img{ margin-right: 10px;}
+/**************banner**************/
+.banner{ clear: both; overflow: hidden; position: relative; margin-bottom: 30px; margin-top: 66px;}
+.banner .bd{ width:100%; height:585px; text-align:center}
+.banner .bd li{  margin:0 auto; width:100%; min-width:1190px; display:inline-block}
+.banner .bd li a{ width:100%; height:585px; display:inline-block}
+.banner .hd{ position: absolute; left: 0; bottom: 10px;*bottom:15px;z-index: 2; text-align: center; width: 100%;}
+.banner .hd li{ 
+	width:15px;
+	border-radius: 50%;
+	background:#fff;
+	box-shadow: 1.576px 1.231px 3px 0px rgb( 7, 0, 2 );
+	width: 15px; height: 14px; 
+	cursor: pointer; 
+	display: inline-block; *display: inline; 
+	overflow: hidden; 
+	margin: 0 5px;
+}
+.banner .hd li.on{background: #ffe72e;}
+
+
+.swt-en{position: fixed; z-index: 150; top: 200px; right: 10px;cursor: pointer;}
+.swt-en2{
+	position: fixed; z-index: 151; 
+	top: 200px; right:-143px;
+	width: 143px; overflow: hidden; 
+	background: url("../images/cslist_top_bg_en.png") no-repeat 0 0;
+}
+.swt-en2-close{ text-align: right; padding:3px 8px 41px; clear: both; overflow: hidden;}
+.swt-en2-close img{cursor: pointer;}
+.swt-en3{ background: url("../images/cslist_mid_bg.png") repeat-y center; padding:0 7px 0 6px ; clear: both; overflow: hidden;}
+.swt-en3 a{ display: block; clear: both; overflow: hidden; margin-bottom: 3px;}
+.swt-en-1{ 
+	background: url("../images/cslist_mid_Tbg.gif") no-repeat center center; 
+	line-height: 21px;
+	height: 21px; 
+	overflow: hidden; 
+	text-align: center;
+}
+.swt-en-1 span{ display: inline-block; background: url("../images/cslist_other_hide.gif") no-repeat right center; padding-right:18px;}
+.swt-en-2{ 
+	line-height: 26px; 
+	padding: 1px 0 1px 18px; 
+	background: url("../images/icon_person_kf.gif") no-repeat 0 center; 
+	margin:0 2px 3px;
+	transition-duration:0s !important;
+}
+.swt-en-2:hover{border: solid #8fbae2; border-width: 1px 0; background-color: #d5e8fa; padding: 0 0 0 18px;}
+.swt-en-3{ 
+	background: url("../images/skypeline.gif") no-repeat 0 0; 
+	height: 30px; 
+	line-height: 30px; 
+	font-weight: bold; 
+	padding-left:40px; 
+	color:#7a7b7b;
+}
+.swt-en-bottom{ background: url("../images/cslist_btm_none.png") no-repeat 0 0; width: 100%; height:17px}
+
+.case_article .bdsharebuttonbox{ display: inline-block;}
+
+.lian_yi{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom:35px;
+}
+.lian_yi_zuo{
+	width: 410px;
+	height: 350px;
+	border: 0.1px solid #cccccc;
+	float: left;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+.lian_yi_zuo p{
+	font-size: 14px;
+	padding:5px 10px;
+
+}
+.lian_yi_you{
+	width: 641px;
+	height: 350px;
+	border: 0.1px solid #cccccc;
+	float: left;
+	border-radius: 3px;
+}
+.xin_wu a{
+	padding-left:5px;
+}

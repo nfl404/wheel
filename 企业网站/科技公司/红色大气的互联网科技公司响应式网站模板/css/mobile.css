@@ -1,0 +1,306 @@
+﻿/****************************************************************
+ *																*		
+ * 						      素材火							*
+ *                        www.sucaihuo.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+@charset 'UTF-8';
+/* UED Interaction (http://www.njued.com) */
+/* Design By Gkmk Copyright 2016 UED Interaction */
+@media screen and (min-width:320px) { html { font-size:100.00px;} }
+
+/****************************************pad*************************************************/
+@media only screen and (max-width:800px) {}
+
+/*****************************************phone plus*****************************************/
+@media (max-width:768px) {
+html,body {width: 100%;height: 100%;}
+body {font-size:.12rem; line-height:1.5; text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; -webkit-font-smoothing: antialiased;}
+h1, h2, h3, h4, h5, h6{margin:0 0 .12rem; font-size:.14rem; }
+/* Font css */
+.f64{font-size:.52rem;}
+.f60{font-size:.48rem;}
+.f52{font-size:.41rem;}
+.f48{font-size:.32rem;}
+.f32{font-size:.24rem;}
+.f28{font-size:.22rem;}
+.f24{font-size:.20rem;}
+.f22{font-size:.16rem;} 
+.f18{font-size:.15rem;}
+.f16{font-size:.14rem;}
+.f15{font-size:.14rem;}
+.f14{font-size:.12rem;}
+/* Btn css */
+.comm-Btn,.comm-Btn:hover{ padding:0 .34rem; line-height:.34rem;}
+
+/* comm css */
+.container{padding:0 .12rem; max-width:100%; min-width:100%;}
+.Ued-case,.Ued-index-contact,.Ued-clients,.Ued-friends,.Ued-items-list,.Ued-abtdiv,.Ued-gettouch,.Ued-about,.Ued-data,.Ued-space,.Ued-team,.Ued-job{width:100%; min-width:100%; padding:.44rem 0;}
+/* title css */
+.title-index{padding:0 .12rem; font-weight:200;}
+
+/* header*/
+.Ued-header{padding-top:10px; padding-bottom:10px; height:60px;}
+.Ued-header h1 a.logo{width:40px; height:40px; background-size:40px 40px;}
+.Ued-header ul.nav{display:none;}
+.Ued-header-scroll{padding-top:10px; padding-bottom:10px; height:60px;background:rgba(255,255,255,.96);}
+.Ued-header-scroll h1 a.logo{display:block; width:176px; height:40px; text-indent:-9999px; background:url(../images/logo_txt_2x.png) no-repeat center; background-size:176px 40px;}
+
+/*right menu*/
+.menu,.slideout-menu {position:fixed; top:0;bottom:0;right:0;z-index:0; width:256px; overflow-y:scroll; -webkit-overflow-scrolling:touch; display:none;}
+.panel,.slideout-panel {position: relative;z-index:1;}
+.slideout-open,.slideout-open body {overflow: hidden;}
+.slideout-open .slideout-menu {display: block;}
+
+.Ued-mobile-nav{padding:.2rem 0 .2rem .2rem; color:#ccc; background:#7b7d7a;}
+.mobile-nav-list{margin:0 0 .4rem;}
+.mobile-nav-list li a,.mobile-nav-list li a:hover{padding:0; display:block; font-size:.16rem; line-height:.50rem; color:#eee; text-decoration:none;}
+.mobile-nav-list li a.cicon-qq{display:block; width:44px; height:44px; margin:0; background:url(../images/cicon_bg_qq.png) no-repeat -10px 0px; background-size:44px; text-indent:-9999px; -moz-transition:all 0.3s;-webkit-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s;}
+.mobile-nav-list li a.cicon-qq:hover{background:url(../images/cicon_bg_qq.png) no-repeat -10px -44px; background-size:44px;  -moz-transition:all 0.3s;-webkit-transition:all 0.3s;-o-transition:all 0.3s;-ms-transition:all 0.3s;transition:all 0.3s;}
+.mobile-nav-list li a.current,.Mobile-nav-list li a.current:hover{font-weight:600; color:#fff;}
+.site-infor{padding:.12rem 0; border-top:1px solid #999;}
+
+/*menu icon*/
+.toggle-btn{position:fixed; top:0; right:0; z-index:2000; display:block; border:none; outline:none; width:60px; height:60px; padding-top:12px; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+.icon-i{margin:6px auto; display:block; width:30px; height:3px; background:#ea3340;}
+
+/* footer */
+.Ued-footer{padding:.22rem 0; min-width:100%;}
+.footer-box{float:left; width:100%;}
+.footer-nav{overflow:hidden; margin:0 0 .3rem; padding-bottom:.25rem; border-bottom:1px solid #ddd;}
+.footer-nav li{width:100%; padding:0;}
+.footer-nav li a{line-height:.5rem; font-size:.16rem; }
+.footer-nav li a:hover{text-decoration:none; color:#ccc;}
+.logo-en{margin:.3rem 0 .12rem; display:block; width:238px; height:18px; background:url(../images/logo_en_2x.png) no-repeat center top; background-size:238px 18px;}
+.fr{float:left;}
+.tright{text-align:left;}
+.statement{clear:both; padding:.12rem; line-height:20px; font-size:.12rem; text-align:left; color:#fff; background:#8a8a8a;}
+/*slider index*/
+#Slider-index .slick {width:100%; margin: 0 auto; min-width:100%;}
+#Slider-index .slick-dots {bottom: .2rem;}
+
+/* index service item */
+.Ued-service-item{min-width:100%;}
+.Ued-service-item .container{padding:0;}
+.service-item li{width:100%; border-left:0px solid #ddd; border-bottom:1px solid #ddd; }
+.service-item li:last-child{border-right:0px solid #ddd;}
+.service-item li a,.service-item li a:hover{padding:.2rem; display:block; text-decoration:none; text-align:left; background-image:url(../images/arr_comm.png); background-repeat:no-repeat; background-position:94% center; background-size:.22rem;}
+.service-item li a span{padding:.06rem .06rem .06rem .7rem;}
+.service-item li a span h3{line-height:.26rem;}
+.service-item li a span p{line-height:.2rem;}
+
+.service-item li a span.service-ue{background:url(../images/icon_ue.png) no-repeat 0px 0px; background-size:.5rem;}
+.service-item li a:hover span.service-ue{background:url(../images/icon_ue.png) no-repeat 0px -.5rem; background-size:.5rem;}
+.service-item li a span.service-ui{background:url(../images/icon_ui.png)  no-repeat 0px 0px; background-size:.5rem;}
+.service-item li a:hover span.service-ui{background:url(../images/icon_ui.png)  no-repeat 0px -.5rem; background-size:.5rem; }
+.service-item li a span.service-dev{background:url(../images/icon_dev.png) no-repeat 0px 0px; background-size:.5rem;}
+.service-item li a:hover span.service-dev{background:url(../images/icon_dev.png) no-repeat 0px -.5rem; background-size:.5rem; }
+
+/* case*/
+.Ued-case .container{padding:0;}
+.case-list li{width:50%; margin:.2rem 0 0; }
+.case-list li a h4,.case-list li a:hover h4{width:100%; padding:0 .12rem; line-height:.32rem;}
+.case-list li a p,.case-list li a:hover p{display:none;}
+
+/* index contact */
+.Ued-index-contact {background-attachment:scroll;}
+.Ued-index-contact h3{width:80%;}
+.Ued-index-contact p{width:90%;}
+.btn-box{margin:.12rem auto 0;}
+.Ued-index-contact p.btn-box a{font-size:.16rem;}
+
+/* client commemt */
+.Ued-clients .title-index{padding:0; }
+#Slider-say .slick {width:100%; padding:.24rem .12rem;}
+#Slider-say .slick div.slidbox h3{margin:0 0 .2rem; font-size:.20rem;}
+#Slider-say .slick div.slidbox p{margin:0 0 .2rem;}
+#Slider-say .slick-dots { bottom: .0rem;}
+/* friends */
+.Ued-friends ul.friends-list li{margin:.12rem 0; padding:.12rem; width:50%; }
+
+/*subpage banner*/
+.Ued-showimg{padding:.44rem 0; height:3.2rem; min-width:100%; }
+
+/*service abt*/
+.Ued-sitem{height:auto; min-width:100%;}
+.sitem-txt{width:100%; height:3.2rem; padding:.44rem 0;}
+.sitem-img{width:100%; height:3.2rem;}
+.txtarea-left{float:left; padding-left:.24rem; padding-right:.24rem; max-width:100%; min-width:100%; text-align:left; }
+.txtarea-right{float:left; padding-left:.24rem; padding-right:.24rem; max-width:100%; min-width:100%; text-align:left; }
+
+/*service item*/
+.items-list li{float:left; width:100%; padding:.24rem .12rem; text-align:left; }
+.items-list li dl{display:block; }
+.items-list li dl dt{text-align:left; margin:0 0 .12rem; height:.68rem; padding:.12rem 0; padding-left:.58rem;}
+.items-list li dl dt h4{line-height:.27rem;}
+.items-list li dl dt h4 span{line-height:.17rem;}
+.items-list li dl dd{line-height:1.5; height:auto; }
+.items-list li dl dt.item-icons-01,
+.items-list li dl dt.item-icons-02,
+.items-list li dl dt.item-icons-03,
+.items-list li dl dt.item-icons-04,
+.items-list li dl dt.item-icons-05,
+.items-list li dl dt.item-icons-06,
+.items-list li dl dt.item-icons-07,
+.items-list li dl dt.item-icons-08,
+.items-list li dl dt.item-icons-09,
+.items-list li dl dt.item-icons-10,
+.items-list li dl dt.item-icons-11,
+.items-list li dl dt.item-icons-12{ background-size:.44rem; }
+
+.Ued-abtdiv{background-attachment:scroll;}
+.Ued-abtdiv h3{font-size:.28rem;}
+
+/*subpage contact*/
+.Ued-gettouch dl dt{padding:0;float:none; line-height:.3rem; text-align:center;}
+.Ued-gettouch dl dd{padding:.12rem; float:none;text-align:center;}
+.Ued-gettouch dl dd h3{line-height:.3rem; }
+.Ued-gettouch dl dd p{margin:0 0 .12rem; line-height:.25rem; }
+.Ued-gettouch dl dd p span{margin:0 .12rem;}
+.Ued-gettouch dl dd.btns-box{float:none; padding:0;}
+
+/*cases slider style*/
+#Slider-case .slick {height:3.2rem;  width:100%; min-width:100%;}
+#Slider-case .slick div.slidbox{ height:3.2rem;}
+#Slider-case .slick-dots { bottom: .2rem;}
+
+/*case sort*/
+.Ued-fix-sort .container{padding:0;}
+.Ued-fix-sort ul li{float:left; padding:0; width:20%; text-align:center;}
+.Ued-fix-sort ul li a,.Ued-fix-sort ul li a:hover{display:inline-block; line-height:.34rem; padding:.08rem;}
+
+#UedCases .Ued-case{padding-top:.24rem;}
+/* data */
+.Ued-data{background-attachment:scroll; }
+.data-list li{float:left; width:50%; padding:.12rem;}
+.data-list li span{margin:0 auto 10px; width:1.2rem; height:1.2rem; line-height:1.2rem; border:2px solid #ddd; border-radius:.6rem; }
+
+/* about txt*/
+.Ued-about{padding-left:.12rem;padding-right:.12rem;}
+.Ued-about h3{margin:0 auto .12rem; width:84%;  color:#121212;}
+.Ued-about p{margin:0 auto .12rem;  width:100%;}
+
+/* space */
+.Ued-space .container{padding:0;}
+.Ued-space .container p{padding:0 .12rem;}
+.space-box{margin:.24rem 0 0; width:100%; overflow:hidden;}
+.spbox{float:left; width:100%; height:auto; overflow:hidden;}
+.spbox-row{height:auto;width:100%; overflow:hidden;}
+.spbox-row-box{float:left; width:50%; height:auto; overflow:hidden;}
+.space-box img{display:block; width:100%; height:auto;}
+/* team list */
+.Ued-team .container{padding:0;}
+.Ued-team .container p{padding:0 .12rem;}
+.team-list{margin:.24rem 0 0;}
+.team-list li{width:50%; padding:.12rem 0; line-height:.2rem;}
+.team-list li img{width:1.2rem; height:1.2rem; border-radius:.6rem; }
+.team-list li span label{display:block;}
+.team-list li a.join-link{width:1.2rem; height:1.2rem; border-radius:.6rem; background-size:.3rem;}
+
+/* contact */
+.Ued-contact{min-width:100%;}
+.contact-ways li{float:left; width:100%; height:auto;  border-left:0px; border-bottom:1px solid #ddd;}
+.contact-ways li:last-child{border-right:0px solid #ddd;}
+.contact-ways li a,.contact-ways li a:hover{display:block; padding:.34rem 0; text-align:center; }
+
+.contact-ways li h4{font-size:.14rem; color:#666; line-height:.25rem; margin:0; font-weight:200; }
+.contact-ways li a,.contact-ways li a:hover{text-decoration:none; color:#121212;}
+.contact-ways li p.cway-txt{font-size:.24rem; line-height:.34rem; color:#121212;}
+.contact-ways li a i{margin:0 auto 20px; display:block; width:.9rem; height:.9rem; border-radius:.45rem; }
+
+.contact-ways li a i.i-phone{background-size:.9rem;}
+.contact-ways li a:hover i.i-phone{background-position:0 -.9rem;}
+.contact-ways li a i.i-qq{background-size:.9rem;}
+.contact-ways li a:hover i.i-qq{background-position:0 -.9rem;}
+.contact-ways li a i.i-mail{background-size:.9rem;}
+.contact-ways li a:hover i.i-mail{background-position:0 -.9rem;}
+
+
+.weixin{background-attachment:scroll;}
+
+/*map*/
+.Ued-map{position:relative; height:3.2rem; min-width:100%;}
+.mark-info{padding:.12rem 0;}
+.mark-info h4{margin:0; line-height:.25rem; font-size:.16rem; color:#fff; font-weight:300;}
+.mark-info a,.mark-info a:hover{color:#fff; text-decoration:none;}
+
+/* job*/
+.Ued-job{background:#f8f8f8;}
+
+.Ued-job h3.title-index{padding:0;}
+.job-teambg{margin:.24rem auto;}
+
+.job-list dl{display:block; }
+.job-list dl dt{text-align:left; margin:0 0 .12rem; height:.68rem; padding:.12rem 0; padding-left:.58rem;}
+.job-list dl dt h4{line-height:.27rem;}
+.job-list dl dt h4 span{line-height:.17rem;}
+.job-list dl dd{line-height:1.5; height:auto;  width:100%;}
+
+.job-list dl dt.item-icons-01,
+.job-list dl dt.item-icons-02,
+.job-list dl dt.item-icons-03,
+.job-list dl dt.item-icons-04,
+.job-list dl dt.item-icons-05,
+.job-list dl dt.item-icons-06,
+.job-list dl dt.item-icons-07,
+.job-list dl dt.item-icons-08,
+.job-list dl dt.item-icons-09,
+.job-list dl dt.item-icons-10,
+.job-list dl dt.item-icons-11,
+.job-list dl dt.item-icons-12{ background-size:.44rem; }
+
+
+/*show txt style*/
+.show-txtstyle-center h5{display:none;}
+.show-txtstyle-center .f64{font-size:.32rem;}
+.show-txtstyle-center h3.f48{font-size:.22rem;}
+.show-txtstyle-center p.iconimg img{margin:0 auto 2%; width:68px;}
+/*show txt style end*/
+
+/*show case example*/
+.case-detail{height:2.5rem; min-width:100%;}
+.example-list{width:100%; min-width:100%; }
+.case-example-txt .container{padding:.3rem .14rem .2rem; color:#fff; text-align:center;}
+.case-example-txt h3{margin:0 0 .12rem;font-size:.2rem; font-weight:200;}
+.case-example-txt p{margin:0 auto .08rem; font-size:.12rem; width:100%; text-align:center;}
+.case-example-txt p.pcenter{text-align:center;padding:.12rem;}
+.case-example-txt p.pcenter img{display:block; margin:0 auto; width:50%;}
+.case-example-txt a.go-sitelink,.case-example-txt a.go-sitelink:hover{position:relative; margin:20px auto; display:inline-block; padding:0 .38rem; line-height:.38rem; font-size:.16rem; color:#fff; border:1px solid #fff; border-radius:4px; }
+.case-example-txt a.go-sitelink i{position:absolute; left:.05rem; top:.05rem; display:block; width:.28rem; height:.28rem; }
+
+/*show case example end*/
+
+}
+/*************************************************phone************************************/
+@media only screen and (max-width:640px) {}
+
+@media only screen and (max-width:320px) {
+/* Font css */
+.f64{font-size:.39rem;}
+.f60{font-size:.36rem;}
+.f52{font-size:.32rem;}
+.f48{font-size:.28rem;}
+.f32{font-size:.20rem;}
+.f22{font-size:.16rem;}
+.f16{font-size:.14rem;}
+.f14{font-size:.12rem;}
+/* header*/
+.Ued-header{padding-top:15px; padding-bottom:15px;height:60px;}
+.Ued-header h1 a.logo{width:30px; height:30px; background-size:30px 30px;}
+.Ued-header-scroll{padding-top:15px; padding-bottom:15px;height:60px; background:rgba(255,255,255,.96);}
+.Ued-header-scroll h1 a.logo{width:132px; height:30px; background-size:132px 30px;}
+/*menu icon*/
+.toggle-btn{width:50px; height:50px; padding-top:14px;}
+.icon-i{width:26px; height:2px; }
+
+/*right menu*/
+.mobile-nav-list li a,.mobile-nav-list li a:hover{font-size:.14rem; line-height:.44rem;}
+
+#Slider-say .slick div.slidbox h3{font-size:.18rem;}
+
+.Ued-fix-sort ul li a,.Ued-fix-sort ul li a:hover{font-size:.14rem;}
+
+}
+
+

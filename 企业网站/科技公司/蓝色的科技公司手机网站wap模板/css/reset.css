@@ -1,0 +1,149 @@
+  @charset "utf-8";  
+  
+/* reset */  
+html,body{ 
+	-webkit-user-select: none; 	-webkit-tap-highlight-color: rgba(0,0,0,0); 	-webkit-tap-highlight-color: transparent; 	-webkit-touch-callout: none; 
+	-webkit-touch-callout: none; 
+	-webkit-font-smoothing: antialiased; 
+	font-family: microsoft yahei,arial; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,span,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	margin:0;
+	padding:0;
+	border: 0 none;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body,button,input,select,textarea{ 
+	font-family: Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif/"Microsoft YaHei"/"微软雅黑"; 
+	} 
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+	}
+/* 初始化标签在所有浏览器中的margin、padding值 */  
+fieldset,img {
+	border:0 none;
+	}  /* 重置fieldset（表单分组）、图片的边框为0*/  
+dl,ul,ol,menu,li {
+	list-style:none;
+	}   /* 重置类表前导符号为onne,menu在HTML5中有效 */  
+blockquote, q {
+	quotes: none;
+	}   /* 重置嵌套引用的引号类型 */  
+blockquote:before, blockquote:after,q:before, q:after {
+	content:'';
+	content:none;
+	}
+/* 重置嵌套引用*/  
+input,select,textarea,button {
+	vertical-align:middle;
+	}  /* 重置表单控件垂直居中*/  
+button {
+	border:0 none;
+	background-color:transparent;
+	cursor:pointer;
+	}
+ /* 重置表单button按钮效果 */  
+/*body {
+	background:#fff;
+	}   重置body 页面背景为白色 */  
+body,th,td,input,select,textarea,button {
+	font-size:100%;
+	line-height:1 ;
+	font-weight: normal;
+	color:#666;
+	} /* 重置页面文字属性 */  
+input,button,select,textarea{
+	outline:none;
+	}
+textarea{
+	resize:none;
+	}/*聚焦的时候都有一个黄色的边框*/
+a {
+	color:#666;
+	text-decoration:none;
+	display: block;
+	}  /* 重置链接a标签 */  
+a:active, a:hover {
+	text-decoration:none;
+	}   /* 重置链接a标签的鼠标滑动效果 */  
+address,caption,cite,code,dfn,em,var {
+	font-style:normal;
+	font-weight:normal;
+	}  /* 重置样式标签的样式 */  
+caption {
+	display:none;
+	}    /* 重置表格标题为隐藏 */  
+table {
+	width:100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin: 0;
+	table-layout:fixed;
+	border:"";/*0或者""html5只识别这两个属性*/
+	}    /* 重置table属性 */  
+img{
+	vertical-align:top;
+	display: block;
+	}  /* 图片在当前行内的垂直位置 */  
+/* 页面设置 */  
+ /* 取消a标签点击后的虚线框 */  
+a {
+	outline: none;
+	}    
+a:active {
+	star:expression(this.onFocus=this.blur());
+	}  
+ /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */  
+/*清除浮动--推荐使用*/  
+.clearfix:before,.clearfix:after{
+	content: '';
+	display: table;
+	height: 0;
+  visibility: hidden;
+  display: block;  
+	}  
+.clearfix:after{
+	clear: both;
+	}  
+/*自己添加*/
+a,img,button,input,textarea{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	}
+/*解决a标签点击有阴影*/
+.clearfix{
+	*zoom: 1;	
+	}
+/*重置input*/	
+/*取消按钮在iphone上的默认样式*/
+input[type=button],input[type=number]{ 	-webkit-appearance: none; 
+	outline: none; 
+}
+/*移除上下小箭头  chrome*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{ 
+	-webkit-appearance: none !important; 
+	margin: 0; 
+}
+input[type=number],input[type=date],input[type=datetime],input[type=datetime-local]{ 
+	-moz-appearance: textfield; 
+	-webkit-appearance: none !important; 
+	margin: 0; 
+}
+/*移除上下小箭头 Firefox*/
+input::-webkit-input-placeholder{ 
+	color: rgba(0,0,0,.3); 
+}
+textarea::-webkit-input-placeholder{ 
+	color: rgba(0,0,0,.3);
+}
+input::-webkit-input-speech-button{ 
+	display: none; 
+}
+/*清除select默认箭头*/
+/*----单独添加*/
+::selection {color: #fff;background: #fd6114;} 
+::-moz-selection {color: #fff;background: #fd6114;}
