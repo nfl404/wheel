@@ -1,0 +1,95 @@
+.nav_tit{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	height: 32px;
+}
+.xian{
+	height: 12px;
+	width: 100%;
+	border-bottom: 1px solid #DCDCDC;
+	position: absolute;
+	z-index: 1;
+}
+.nav_tit ul{
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	background: #e7e7e7;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+	text-align: center;
+}
+.nav_tit ul li{
+	display: inline-block;
+	margin: 0 15px;
+	background: #E7E7E7;
+	color: #333333;
+	cursor: pointer;
+}
+.nav_tit ul li:hover{
+	color: #0070C9;
+}
+.nav_tit ul li.active{
+	color: #0070C9;
+}
+.nove{
+	width: 1200px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 20px;
+}
+.tiem_nr{
+	overflow: hidden;
+	padding: 30px;
+	background: #FFFFFF;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.tiem_nr h2{
+
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	color: #333333;
+	font-size: 24px;
+	font-weight: normal;
+	border-bottom: 1px solid #DCDCDC;
+}
+.zhaopin{
+	overflow:hidden ;
+}
+.zhao_item{
+	overflow: hidden;
+	float: left;
+	width: 50%;
+}
+.zhao_item h3{
+	color: #0070C9;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 36px;
+}
+.zhao_item p{
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #333333;
+	line-height: 24px;
+	text-align: justify;
+}
+.jigou p{
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #333333;
+	line-height: 24px;
+	text-align: justify;
+}
+.clear_box{
+	width: 100%;
+	clear: both;
+}

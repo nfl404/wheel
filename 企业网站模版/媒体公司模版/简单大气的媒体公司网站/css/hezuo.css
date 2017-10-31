@@ -1,0 +1,161 @@
+*{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #555555;
+}
+body,html{
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+}
+h1,h2,h3,p,input,ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+}
+.box{
+	margin: 30px auto;
+	width: 640px;
+	overflow: hidden;
+	box-shadow:0 0 15px #CCCCCC ;
+	background: #FFFFFF;
+}
+.tit{
+	background: #0070C9;
+	text-align: center;
+	padding: 20px 0;
+}
+.tit h1{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	font-size: 24px;
+}
+.tit p{
+	color: #FFFFFF;
+	line-height: 48px;
+}
+.item_box{
+	padding: 30px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.item{
+	margin-bottom: 20px;
+	clear: both;
+}
+.item h3{
+	color: #333333;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.item h3 em{
+	font-style: normal;
+	color: #0070C9;
+}
+.item p{
+	color: #999999;
+	margin-bottom: 10px;
+}
+.item input[type="text"]{
+	width: 450px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid #DCDCDC;
+	padding:0 5px;
+}
+.item input[type="text"]:focus {
+ border: 1px solid #0070C9;
+}
+.input_box{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.input_box p{
+	display: none;
+}
+.item textarea{
+	width: 450px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid #DCDCDC;
+}
+.item textarea:focus {
+ border: 1px solid #0070C9;
+}
+.active p{
+	display: block;
+	color: #da2824;
+}
+.active  input[type="text"]{
+	border: 1px solid #da2824;
+}
+.active textarea{
+	border: 1px solid #DA2824;
+}
+
+.item label{
+	float: left;
+	width: 33.33%;
+	line-height: 24px;
+}
+#submit{
+	width: 80px;
+	height: 30px;
+	outline: none;
+	background: #0070C9;
+	color: #FFFFFF;
+	font-size: 16px;
+	margin: 30px auto;
+	border: none;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+}
+.right{
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left:330px;
+	top: 10px;
+}
+.tanchu{
+	display: block;
+	width: 240px;
+	height: 310px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -120px;
+	margin-top: -155px;
+	overflow: hidden;
+	box-shadow: 0 0 15px #CCCCCC;
+	z-index: 99;
+}
+.tanchu img{
+	width: 180px;
+	margin: 30px 0;
+}
+.tanchu p{
+	color: #333333;
+	background: #f8f8f8;
+	line-height: 64px;
+	border-top: 1px solid #DCDCDC;
+}
+.bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.37);
+	top: 0;
+	left: 0;
+	z-index: 9;
+}

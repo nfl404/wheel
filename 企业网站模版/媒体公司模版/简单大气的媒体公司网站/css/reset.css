@@ -1,0 +1,283 @@
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "微软雅黑";
+}
+ul,li,p,h2{list-style: none; padding: 0; margin: 0;}
+.clearfix:before,
+.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
+body{
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+a{color: #2fa0ec;outline: none;text-decoration: none;}
+a:hover,a:focus{color:#74777b;text-decoration: none;list-style: none;border: none;}
+.htmleaf-container{margin: 0 auto;}
+
+
+
+/*宽度*/
+.w10{width: 10%;}
+.w20{width: 20%;}
+.w30{width: 30%;}
+.w40{width: 40%;}
+.w60{width: 60%;}
+.w80{width: 80%;}
+.w90{width: 90%;}
+.w100{width: 100%;}
+.w1200{
+	width: 1200px;
+	margin: auto;
+}
+	
+
+
+/*编剧*/
+.mt2{margin-top: 2%;}
+.pt4{padding-top: 4%;}
+.pt2{padding-top:20px;}
+.pb2{padding-bottom:20px;}
+
+.mb30{margin-bottom: 30px;}
+
+
+
+/*布局对齐*/
+.margin-auto{margin: auto;}
+
+
+/*字体大小*/
+.f12rem{font-size:1.2rem;}
+.f14rem{font-size:1.4rem;}
+.f16rem{font-size:1.6rem;}
+
+
+
+/*字体样式*/
+.font-weight{font-weight: bold;}
+.font400{font-weight: 400;}
+
+/*字体对齐*/
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
+/*浮动*/
+.fl{float: left;}
+.fr{float: right;}
+
+
+.margin-fixed{margin-top: 78px;}
+
+
+.font-ff6500{color: #999;padding-top: 2px;}
+
+
+
+/*背景色*/
+.bfff{
+	background: #FFFFFF;
+}
+.bgcolor-1 { background: #f0efee; }
+.bgcolor-2 { background: #f9f9f9; }
+.bgcolor-3 { background: #e8e8e8; }/*light grey*/
+.bgcolor-4 { background: #2f3238; color: #fff; }/*Dark grey*/
+.bgcolor-5 { background: #df6659; color: #521e18; }/*pink1*/
+.bgcolor-6 { background: #2fa8ec; }/*sky blue*/
+.bgcolor-7 { background: #d0d6d6; }/*White tea*/
+.bgcolor-8 { background: #3d4444; color: #fff; }/*Dark grey2*/
+.bgcolor-9 { background: #ef3f52; color: #fff;}/*pink2*/
+.bgcolor-10{ background: #64448f; color: #fff;}/*Violet*/
+.bgcolor-11{ background: #3755ad; color: #fff;}/*dark blue*/
+.bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
+.bgcolor-20{ background: #494A5F;color: #D5D6E2;}
+/* Header */
+.htmleaf-header{padding: 1em 190px 1em;letter-spacing: -1px;text-align: center;background: #66677c;}
+.htmleaf-header h1 {
+	color: #D5D6E2;
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 0;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+.htmleaf-header h1 span {
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	display: block;
+	font-size: 60%;
+	font-weight: 400;
+	padding: 0.8em 0 0.5em 0;
+	color: #c3c8cd;
+}
+/*nav*/
+.htmleaf-demo a{color: #fff;text-decoration: none;}
+.htmleaf-demo{width: 100%;padding-bottom: 1.2em;}
+.htmleaf-demo a{display: inline-block;margin: 0.5em;padding: 0.6em 1em;border: 3px solid #fff;font-weight: 700;}
+.htmleaf-demo a:hover{opacity: 0.6;}
+.htmleaf-demo a.current{background:#1d7db1;color: #fff; }
+/* Top Navigation Style */
+.htmleaf-links {position: relative;display: inline-block;white-space: nowrap;font-size: 1.5em;text-align: center;}
+
+.htmleaf-links::after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	width: 2px;
+	height: 100%;
+	background: #dbdbdb;
+	content: '';
+	-webkit-transform: rotate3d(0,0,1,22.5deg);
+	transform: rotate3d(0,0,1,22.5deg);
+}
+
+.htmleaf-icon {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0em 0;
+	width: 1.5em;
+	text-decoration: none;
+}
+
+.htmleaf-icon span {display: none;}
+
+.htmleaf-icon:before {
+	margin: 0 5px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+/* footer */
+.htmleaf-footer{width: 100%;padding-top: 10px;}
+.htmleaf-small{font-size: 0.8em;}
+.center{text-align: center;}
+/****/
+.related {
+	color: #fff;
+	background: #494A5F;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 0.5em 0;
+	overflow: hidden;
+}
+
+.related > a {
+	vertical-align: top;
+	width: calc(100% - 20px);
+	max-width: 340px;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+.related a {
+	display: inline-block;
+	text-align: left;
+	margin: 20px auto;
+	padding: 10px 20px;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.related a:hover,
+.related a:active {opacity: 1;}
+
+.related a img {max-width: 100%;opacity: 0.8;border-radius: 4px;}
+.related a:hover img,
+.related a:active img {opacity: 1;}
+.related h3{font-family: "Microsoft YaHei", sans-serif;}
+.related a h3 {font-weight: 300;margin-top: 0.15em;color: #fff;}
+
+/* icomoon */
+.icon-htmleaf-home-outline:before {content: "\e5000";}
+.icon-htmleaf-arrow-forward-outline:before {content: "\e5001";}
+
+@media screen and (max-width: 50em) {
+	.htmleaf-header {padding: 3em 10% 4em;}
+	.htmleaf-header h1 {font-size:2em;}
+	}
+@media screen and (max-width: 40em) {.htmleaf-header h1 {font-size: 1.5em;}}
+@media screen and (max-width: 30em) {.htmleaf-header h1 {font-size:1.2em;}}
+
+
+
+@media only screen and (max-width: 310px) and (min-width: 300px) {html {font-size: 9px}}
+@media only screen and (max-width: 320px) and (min-width: 310px) {html {font-size: 9px}}
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+	html {font-size: 9px} 
+	.filter-menu-list ul{margin-top:.12rem;}
+	.filter-menu-list ul li i{font-size:2.2rem !important;}
+	}
+@media only screen and (max-width: 360px) and (min-width: 350px) {
+	html {font-size: 10px} 
+	.filter-menu-list ul{margin-top:.1rem;}
+	.filter-menu-list ul li i{font-size:2.2rem !important;}
+	}
+@media only screen and (max-width: 480px) and (min-width: 360px) {
+	html {font-size:0.9rem} 
+	.filter-menu-list ul{margin-top:.1rem;}
+	.filter-menu-list ul li i{font-size:2.2rem !important;}
+	}
+@media only screen and (max-width: 480px) and (min-width: 470px) {html {font-size: 13.33333px}}
+@media only screen and (max-width: 560px) and (min-width: 480px) {html {font-size: 13.33333px}}
+@media only screen and (max-width: 570px) and (min-width: 560px) {html {font-size: 15.83333px}}
+@media only screen and (max-width: 640px) and (min-width: 570px) {html {font-size: 15.83333px}}
+@media only screen and (max-width: 640px) and (min-width: 630px) {html {font-size: 17.77778px}}
+@media only screen and (max-width: 710px) and (min-width: 640px) {html {font-size: 17.77778px}}
+@media only screen and (max-width: 710px) and (min-width:768px) {html {font-size: 17.77778px}}
+@media only screen and (max-width: 1000px) and (min-width:768px) {
+	.header-nav .logo img, .header-nav .iphone img{width:100%;}
+	.header-nav{width:100%;}
+	.hero-center {height:68px;line-height:68px; }
+	.header-nav .logo{width: 15%;margin-left: 1%;}
+	.header-list{width:66%;}
+	.header-list li{width:20%;}
+	.header-nav .iphone{width:15%;margin-right: 1%;margin-top:8px;}	
+	.margin-fixed {margin-top:68px;}
+	.header-list li a {color: #fff; font-size: 15px;}
+}
+@media (min-width: 1000px) and (max-width:1152px) {
+	.header-nav .logo img, .header-nav .iphone img{width:100%;}
+	.header-nav{width:100%;}
+	.hero-center {height:68px;line-height:68px; }
+	.header-nav .logo{width: 15%;margin-left: 1%;margin-top:10px;}
+	.header-list{width:67%;}
+	.header-list li{width:20%;}
+	.header-nav .iphone{width:14%;margin-right: 1%;margin-top: 8px;}	
+	.margin-fixed {margin-top:68px;}
+	.header-list li a {color: #fff; font-size: 16px;}
+}
+
+@media only screen and (max-width:1200px) and (min-width:1152px) {
+	.header-nav{width:100%;}
+	.hero-center {height:72px;line-height:72px; }
+	.header-nav .logo{width: 15%;margin-left: 1%;margin-top: 5px;}
+	.header-list{width:57%;}
+	.header-list li{width:20%;}
+	.header-nav .iphone{width:21%;}	
+	.margin-fixed {margin-top:72px;}
+	}
+
+@media only screen and (max-width:1366px) and (min-width:1200px) {
+	.header-nav .logo img, .header-nav .iphone img{width:100%;}
+	.header-nav{width:96%;}
+	.header-nav .logo{width:20%;margin-left: 2%;}
+	.header-list{width:58%;}
+	.header-list li{width:20%;}
+	.header-nav .iphone{width:18%;}
+	}

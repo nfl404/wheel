@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>商务合作</title>
+		<link rel="stylesheet" href="css/hezuo.css" />
+	</head>
+		<div class="box">
+			<div class="tit">
+				<h1>艺像商务合作</h1>
+				<p>请填写以下信息，我们将在两个工作日内与您联系</p>
+			</div>
+			<div class="item_box">
+				<form>
+					<div class="item">
+						<h3>如何称呼您<em>*</em></h3>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<input type="text">
+						</div>
+					</div>
+					
+					<div class="item">
+						<h3>您的联系方式<em>*</em></h3>
+						<p>手机、微信、邮箱等</p>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<input type="text">
+						</div>
+					</div>
+					
+					<div class="item">
+						<h3>您的团队或公司名称<em>*</em></h3>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<input type="text">
+						</div>
+					</div>
+					
+					<div class="item">
+						<h3>您的团队或公司简介<em>*</em></h3>
+						<p>描述下您或您的团队</p>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<textarea></textarea>
+						</div>
+					</div>
+					
+					<div class="item">
+						<h3>合作类型<em>*</em></h3>
+						<p>请选择 2~3 项</p>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<label><input name="Fruit" type="checkbox" value="" checked="checked" />纸媒广告投放 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />新媒体广告投放 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />商业视频拍摄 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />活动策划执行 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />活动/采访邀请 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />后期包装/特效制作 </label> 
+							<label><input name="Fruit" type="checkbox" value="" />其他 </label>  
+						</div>
+					</div>
+					
+					<div class="item">
+						<h3>您的合作意向<em>*</em></h3>
+						<p>您想和艺像合作的是什么呢，请详细描述下哦</p>
+						<div class="input_box">
+							<p>请填写此项</p>
+							<textarea></textarea>
+						</div>
+					</div>
+					<input type="button" value="提交" id="submit">
+				</form>
+			</div>
+		</div>
+		<div class="right" onclick="cancelBOX()">
+			<img src="img/wei.jpg" id="one">
+		</div>
+		<div class="tan_box">
+			<div class="tanchu">
+				<img src="img/erweima.jpg">
+				<p>扫描二维码，分享给好友</p>
+			</div>
+			<div class="bg"></div>
+		</div>
+	
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript">
+	$("input[type='text']").blur(function(){
+	  $(this).parent(".input_box").removeClass("active");
+	});
+	$("textarea").blur(function(){
+	  $(this).parent(".input_box").removeClass("active");
+	});
+	$("#submit").click(function(){
+		$("input[type='text']").each(function () {
+            if ($(this).val() == "") {
+                $(this).parent(".input_box").addClass("active");
+            }
+            else{
+            	$(this).parent(".input_box").removeClass("active");
+            	$("textarea").each(function () {
+			        if ($(this).val() == "") {
+			            $(this).parent(".input_box").addClass("active");
+			        }
+			        else{
+			        	$(this).parent(".input_box").removeClass("active");
+			        	var len=$("input[name='Fruit']:checked").length;
+			        	if(len<1){
+			        		$("input[name='Fruit']").parents(".input_box").addClass("active");
+			        	}else{
+			        		$("#submit").attr('type','submit');  
+			        		 $("#submit").trigger("click");
+			        	}
+			        }
+			    })
+            }
+        })
+		
+	});
+	$(".tan_box").hide();
+	$("#one").click(function(){
+		$(".tan_box").show();
+	})
+	$(".bg").click(function(){
+		$(".tan_box").hide();
+	})
+	
+</script>
+</html>

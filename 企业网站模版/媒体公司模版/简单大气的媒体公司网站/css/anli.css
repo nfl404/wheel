@@ -1,0 +1,210 @@
+.search_min{
+	width: 550px;
+	height: 50px;
+	margin-left: 30px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+.search_min input{
+	float: left;
+	border: none;
+	background: none;
+	height: 48px;
+	line-height: 48px;
+}
+.search_min input[type="text"]{
+	width: 468px;
+	padding-left: 10px;
+	font-size: 16px;
+	display: block;
+}
+.search_min input[type="submit"]{
+	width: 80px;
+	padding: 0;
+	background: url(../img/search.jpg) no-repeat center center;
+	background-size:cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.tit_tab ul {
+    text-align: left;
+    margin: 0 auto;
+    float: left;
+    width: 100%;
+    margin-left: 16px;
+}
+.line_nr ul.zazhi li{
+	float: left;
+	width: 268px;
+	height: 420px;
+	overflow: hidden;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	border: 1px solid #dcdcdc;
+}
+.line_nr ul.zazhi li .poto_item a{
+	display: block;
+	width: 268px;
+	height: 370px;
+	position: relative;
+	overflow: hidden;
+}
+/*页码*/
+* {
+	padding: 0;
+	margin: 0;
+}
+/*
+  * 外面盒子样式---自己定义
+  */
+
+.page_div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: "microsoft yahei";
+	color: #666666;
+	margin-right: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+/*
+ * 页数按钮样式
+ */
+.page_div a {
+	min-width: 30px;
+	height: 28px;
+	text-align: center;
+	margin: 0 4px;
+	background: #e7e7e7;
+	cursor: pointer;
+	line-height: 28px;
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+}
+#firstPage,
+#lastPage {
+	width: 30px;
+	color: #555;
+	background: #e7e7e7!important;
+}
+#prePage,
+#nextPage {
+	width: 70px;
+	color: #555;
+	background: #e7e7e7!important;
+}
+.page_div .current {
+	background-color: #0070c9;
+	border-color: #0070c9;
+	color: #FFFFFF;
+}
+.totalPages {
+	margin: 0 10px;
+}
+.totalPages span,
+.totalSize span {
+	color: #0070c9;
+	margin: 0 5px;
+}
+/*详情*/
+.video_box{
+	margin-top: 80px;
+	width: 100%;
+	overflow: hidden;
+	background: #000000;
+}
+.min_box{
+	width: 970px;
+	margin: auto;
+	text-align: left;
+}
+.vdio{
+	overflow: hidden;
+	background: #f1f0f0;
+}
+.tit{
+	overflow: hidden;
+	line-height: 48px;
+}
+.fenxiang{
+	line-height: 48px;
+	float: right;
+}
+.fenxiang span{
+	float: left;
+}
+/*mian*/
+.mian{
+	width: 1200px;
+	overflow: hidden;
+	margin: auto;
+}
+.mian_left{
+	float: left;
+	width: 860px;
+}
+.mian_right{
+	float: right;
+	width: 300px;
+}
+.mian_one,.mian_two,.mian_three{
+	background: #FFFFFF;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.mian_one h1{
+	line-height: 32px;
+	font-size: 22px;
+	margin: 0;
+	color: #333333;
+}
+.mian_one p.mian_p{
+	color: #999;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.mian_one p.mian_nr{
+	color: #333333;
+	font-size: 14px;
+	line-height: 24px;
+}
+.mian_two h2{
+	color: #333333;
+	font-weight: normal;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+.mian_two p{
+	color: #333333;
+	line-height: 36px;
+	font-size: 16px;
+}
+.mian_three{
+	text-align: center;
+}
+.mian_three .mian_pic{
+	margin: auto;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	border: 1px solid #DCDCDC;
+	padding: 4px;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+.mian_three .mian_pic img{
+	width: 110px;
+	border-radius: 55px;
+}
+.mian_three p{
+	color: #333333;
+	line-height: 36px;
+}
+/*分享*/
+
