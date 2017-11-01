@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate icon" type="image/png" href="images/favicon.png">
+<link rel='icon' href='favicon.ico' type='image/x-ico' />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/default.min.css?t=227" />
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="lib/amazeui/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="lib/handlebars/handlebars.min.js"></script>
+<script type="text/javascript" src="lib/iscroll/iscroll-probe.js"></script>
+<script type="text/javascript" src="lib/amazeui/amazeui.min.js"></script>
+<script type="text/javascript" src="lib/raty/jquery.raty.js"></script>
+<script type="text/javascript" src="js/main.min.js?t=1"></script>
+</head>
+<body>
+﻿<header class="hd">
+    <div class="hd-top am-hide-md-down">
+        <div class="cg">
+            <div class="hd-top-left">
+                <a href="#">设为首页</a>
+                <a href="#">收藏</a>
+                <a href="#">RSS订阅</a>
+            </div>
+            <div class="hd-top-right">
+                <a href="register.html">注册</a>
+                <a href="login.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="cg">
+        <div class="hd-search">
+
+            <div class="hd-search-left">
+                <a href="../index.html"><img class="am-hide-md-down" src="./images/logo.jpg" /></a>
+                <a href="../index.html"><img class="am-show-md-down" src="./images/logo-sm.jpg" /></a>
+            </div>
+
+            <div class="hd-search-right am-hide-md-down">
+                <div class="hd-search-right-input">
+                    <input type="text" name="name" value="" placeholder="搜索模版" />
+                    <button class="font am-show-md-down">&#xe634;</button>
+                </div>
+                <div class="hd-search-right-keyword">
+                    <a href="#">包装用品</a>
+                    <a href="#">母婴</a>
+                    <a href="#">教育</a>
+                    <a href="#">招聘</a>
+                    <a href="#">绿化</a>
+                </div>
+            </div>
+
+
+            <button class="am-show-md-down font f-btn" id="hd_botton" type="button" data-am-modal="{target: '#my-modal'}">&#xe68b;</button>
+        </div>
+    </div>
+
+
+    <div class="hd-bottom">
+        <div class="cg">
+            <div class="hd-bottom-category am-hide-md-down">
+                <h1><a href="javascript:;">全部模版分类</a><i data-am-collapse="{target: '.banner-collapse'}">&#xe78f;</i></h1>
+            </div>
+            <div class="hd-bottom-nav" id="my-modal">
+              <h1 class="am-show-md-down"><input type="text" name="name" value="" placeholder="请输入关键字" /><em class="font">&#xe6e7;</em><i data-am-modal="{target: '#my-modal'}">&#xe607;</i></h1>
+                <ul>
+                    <li class="on"><a href="index.html">首页</a></li>
+                    <li><a href="template.html">模版中心</a></li>
+                    <li><a href="#">定制服务</a></li>
+                    <li><a href="#">成功案例</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+﻿<div class="banner-slide1">
+    <div class="cg">
+        <div class="banner-slide1-div  banner-collapse am-collapse">
+
+            <ul>
+                <li><a href="#">机构组织</a></li>
+                <li><a href="#">农林牧渔</a></li>
+                <li><a href="#">医药卫生</a></li>
+                <li><a href="#">建筑建材</a></li>
+                <li><a href="#">冶金矿产</a></li>
+                <li><a href="#">石油化工</a></li>
+                <li><a href="#">水利水电</a></li>
+                <li><a href="#">交通运输</a></li>
+                <li><a href="#">信息产业</a></li>
+                <li><a href="#">机械机电</a></li>
+                <li><a href="#">轻工食品</a></li>
+                <li><a href="#">服装纺织</a></li>
+                <li><a href="#">专业服务</a></li>
+                <li><a href="#">安全防护</a></li>
+                <li><a href="#">环保绿化</a></li>
+                <li><a href="#">旅游休闲</a></li>
+                <li><a href="#">办公文教</a></li>
+                <li><a href="#">电子电工</a></li>
+                <li><a href="#">玩具礼品</a></li>
+                <li><a href="#">家居用品</a></li>
+                <li><a href="#">物资专材</a></li>
+                <li><a href="#">包装用品</a></li>
+                <li><a href="#">办公家具</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+    <div class="ads">
+        <div class="cg">
+            <img src="images/demo3.jpg" />
+        </div>
+    </div>
+
+    
+    <div  class="am-show-md-down"  style="margin: 1rem 2rem;">
+        <div class="cg">
+            <em style="float: left;margin-right: 4px;">软件下载</em><a href="#doc-oc-demo1" data-am-offcanvas class="font">&#xe68b;</a>
+        </div>
+    </div>
+
+
+
+    <div class="comarticle">
+        <div class="cg">
+
+            <div class="am-offcanvas am-u-lg-3" id="doc-oc-demo1">
+                <div class="comarticle-left">
+                    <h1>软件下载</h1>
+                    <ul class="am-offcanvas-bar">
+                        <li class="on"><a href="#">网页制作</a></li>
+                        <li><a href="#">图形图像</a></li>
+                        <li><a href="#">网站辅助</a></li>
+                        <li><a href="#">服务器类</a></li>
+                        <li><a href="#">站长工具</a></li>
+                        <li><a href="#">上传下载</a></li>
+                        <li><a href="#">编程和数据库</a></li>
+                        <li><a href="#">网站源码</a></li>
+                        <li><a href="#">教程书籍</a></li>
+                        <li><a href="#">常用软件</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                <div class="comarticle-right">
+                    <h1>网页制作</h1>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                            <strong>【adobe dreamweaver cs6 中文破解下载】DW破解版64位 / 32位下载</strong>
+                            <span>adobe dreamweaver cs6破解版是由Adobe公司推出的一款网页设计软件，他可以实现所见即所得的效果。新版的dreamweaver cs6改善了FTP的性能，能高效传输大体积文件，同时也支持HTML5代码。并且还使用了自适应网格版面创建页面...</span>
+                                <h1><em>更新时间：2013/9/11</em><em>人气：13958</em><em>软件大小：146 MB</em></h1>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <strong>【adobe dreamweaver cs6 中文破解下载】DW破解版64位 / 32位下载</strong>
+                                <span>adobe dreamweaver cs6破解版是由Adobe公司推出的一款网页设计软件，他可以实现所见即所得的效果。新版的dreamweaver cs6改善了FTP的性能，能高效传输大体积文件，同时也支持HTML5代码。并且还使用了自适应网格版面创建页面...</span>
+                                <h1><em>更新时间：2013/9/11</em><em>人气：13958</em><em>软件大小：146 MB</em></h1>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <strong>【adobe dreamweaver cs6 中文破解下载】DW破解版64位 / 32位下载</strong>
+                                <span>adobe dreamweaver cs6破解版是由Adobe公司推出的一款网页设计软件，他可以实现所见即所得的效果。新版的dreamweaver cs6改善了FTP的性能，能高效传输大体积文件，同时也支持HTML5代码。并且还使用了自适应网格版面创建页面...</span>
+                                <h1><em>更新时间：2013/9/11</em><em>人气：13958</em><em>软件大小：146 MB</em></h1>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <strong>【adobe dreamweaver cs6 中文破解下载】DW破解版64位 / 32位下载</strong>
+                                <span>adobe dreamweaver cs6破解版是由Adobe公司推出的一款网页设计软件，他可以实现所见即所得的效果。新版的dreamweaver cs6改善了FTP的性能，能高效传输大体积文件，同时也支持HTML5代码。并且还使用了自适应网格版面创建页面...</span>
+                                <h1><em>更新时间：2013/9/11</em><em>人气：13958</em><em>软件大小：146 MB</em></h1>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <strong>【adobe dreamweaver cs6 中文破解下载】DW破解版64位 / 32位下载</strong>
+                                <span>adobe dreamweaver cs6破解版是由Adobe公司推出的一款网页设计软件，他可以实现所见即所得的效果。新版的dreamweaver cs6改善了FTP的性能，能高效传输大体积文件，同时也支持HTML5代码。并且还使用了自适应网格版面创建页面...</span>
+                                <h1><em>更新时间：2013/9/11</em><em>人气：13958</em><em>软件大小：146 MB</em></h1>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
