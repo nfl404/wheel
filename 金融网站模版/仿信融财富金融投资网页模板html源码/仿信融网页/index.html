@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery.js"></script>
+<title>无标题文档</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<style>
+/*-------------banner属性---------------*/
+.bannerBox{overflow:hidden; position:relative;}
+.banner{ width:11720px; position:relative; left:50%; margin-left:-960px;}
+.banner img{ float:left;}
+.circleBox{ position:absolute; bottom:18px; left:50%; margin-left:-73px; z-index:1}
+.circle{ width:12px; height:12px; border-radius:50%; border:2px solid #fff; float:left;}
+.circleBox .current{ background-color:#fff;}
+/*-------------客户端属性---------------*/
+.client{ width:100%; padding-top:40px; text-align:center; padding-bottom:106px; background-color:#f7f7f7;background:url(images/safe_bg.png) no-repeat;}
+.client p{ color:#333;}
+.client h1{ color:#ff8100;}
+.client h1 span{ color:#fff;border:2px solid #a0a0a0; }
+.client .code{ margin-left:auto; margin-right:auto; max-width:578px;}
+.code img{ float:left;}
+/*-------------安全---------------*/
+.safe{ max-width:1100px; margin-left:auto; margin-right:auto; }
+.safe p{ color:#333; margin-left:auto; margin-right:auto; padding-top:40px; margin-left:416px;}
+.safe .line{ max-width:110px; height:1px; background-color:#eaeaea;}
+.safe .Lfcontent{ max-height:1100px;}
+.Lfcontent img{ float:left;}
+.Lfcontent .content{ float:left;}
+.content h1{ color:#666;}
+.content h2{ clear:both; color:#666; line-height:30px; }
+.content .profitBox{ float:left; padding-bottom:15px;}
+.profitBox .profit{ width:120px; height:36px; border:1px solid #ff8100; border-radius:18px; float:left; line-height:36px; color:#ff8100; box-sizing:border-box;}
+.content .index{ float:left;}
+.index ul{ float:left; text-align:center; color:#ccc;}
+.index li a{ color:#ff8100;}
+.dashLine{ max-width:1100px; border-top:1px dashed #eaeaea; height:34px;}
+/*-------------安全---------------*/
+.live{ width:100%; overflow:hidden;}
+.liveBox{width:3840px; position:relative;left:50%; margin-left:-960px; overflow:hidden; }
+/*-------------注册---------------*/
+.register{ max-width:1100px; margin-left:auto; margin-right:auto; text-align:center; padding-top:80px; padding-bottom:112px;}
+.register h1{ color:#999; line-height:36px;}
+.register .btn{ width:400px; height:75px; border-radius:5px; background-color:#ff8100; text-align:center; line-height:75px; margin-left:auto; margin-right:auto; }
+.register .btn a{font-size:18px;color:#fff;}
+/*-------------新闻---------------*/
+.newsBox{ width:100%; background-color:#f8f8f8; padding-top:60px; padding-bottom:72px;}
+.news{ max-width:1100px; margin-left:auto; margin-right:auto;}
+.newsLf{ max-width:630px; float:left;}
+.more p{ float:left;}
+.more h1{ float:right; line-height:40px;}
+.more h1 a{ color:#ff8100;}
+.newsLf .content{ float:left;}
+.newsLf .more{ float:left; width:100%;}
+.content img{ float:left;}
+.content .contentRt{ float:left; max-width:405px; }
+.contentRt h2{ color:#999;}
+.contentRt .line{ max-width:400px; height:1px; background-color:#e0e0e0;}
+.contentRt p{ color:#333; }
+.news .newsRt{ padding-left:15px; float:right; width:40%;}
+.newsRt .more{ width:100%;}
+.newsRt ul{ color:#666;}
+.newsRt li{ line-height:30px;}
+.newsRt .current{ color:#999;}
+.notice span{ width:12px; height:12px; border-radius:50%; background-color:#999; float:left; margin-top:2px;}
+</style>
+</head>
+
+<body>
+<!--------------头部------------------>
+<div class="headerBox">
+	<div class="header">
+    	<div class="logo"><img src="images/logo.gif"></div>
+        <ul>
+        	<li class="mr10 border2"><a href="index.html" class="current">首页</a></li>
+            <li class="mr10"><a href="#">投资理财</a></li>
+            <li class="mr10"><a href="about.html">关于我们</a></li>
+            <li class="mr10"><a href="login.html">注册</a></li>
+            <li><a href="#">在线充值</a></li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--------------banner------------------>
+<div class="bannerBox">
+	<div class="circleBox">
+    	<div class="circle mr6 current"></div>
+        <div class="circle mr6"></div>
+        <div class="circle mr6"></div>
+        <div class="circle mr6"></div>
+        <div class="circle mr6"></div>
+        <div class="circle "></div>
+    </div>
+	<div class="banner">
+    	<img src="images/banner02.jpg">
+        <img src="images/banner02.jpg">
+        <img src="images/banner03.jpg">
+        <img src="images/banner04.jpg">
+        <img src="images/banner06.png">
+        <img src="images/banner06.png">
+    </div>
+</div>
+<!--------------客户端------------------>
+<div class="client">
+	<p class="font32">信融理财，全新移动互联网体验</p>
+    <h1 class="font26 mt6">乐 <span></span> 享 <span></span> 体 <span></span> 验</h1>
+    <div class="code mt78">
+    <img class="mr47" src="images/code_icon01.png">
+    <img src="images/code_icon02.png">
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--------------安全------------------>
+<div class="safe">
+	<p class="font32">投资安全，收益可靠</p>
+    <div class="line mt37"></div>
+    <div class="Lfcontent">
+    	<img src="images/safe_icon01.png" class="mr120">
+        <div class="content">
+        	<h1 class="font26 mt-6">快乐稳赢</h1>
+            <div class="profitBox">
+                <div class="profit mt15 mr25">
+                    <img class="ml11 mt7 mr6" src="images/content_icon01.png">
+                    <a class="font18">定期投资</a>
+                </div>
+                <div class="profit mt15 mr25">
+                    <img class="ml11 mt7 mr6" src="images/content_icon02.png">
+                    <a class="font18">稳定收益</a>
+                </div>
+                <div class="profit mt15">
+                    <img class="ml11 mt7 mr6" src="images/content_icon03.png">
+                    <a class="font18">风险保障</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <h2 class="font14 ">项目期限有 7天 | 15天 | 1个月 | 3个月 | 6个月 | 9个月 | 12个月及以上，选择更灵活</h2>
+            <h2 class="font14 ">预期年化收益率达 8% - 12%</h2>
+            <h2 class="font14 ">到期还本利息</h2>
+            <h2 class="font14 ">1000元即可投资，1元递增</h2>
+            <h2 class="font14 ">支持使用红包、满减券、加息券等奖励工具（根据具体项目会有不同）</h2>
+            <div class="index mt20">
+            	<img src="images/safe_icon03.png">
+                <ul >
+               		<li class="font18"><a>92</a></li> 
+                    <li class="mt5 font14">心动指数</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="clearfix"></div> 
+    </div>
+    <div class="dashLine mt30"></div>
+    <div class="Lfcontent">
+    	<img src="images/safe_icon02.png"  style="float:right;">
+        <div class="content">
+        	<h1 class="font26 mt-6">开心超赚</h1>
+            <div class="profitBox">
+                <div class="profit mt15 mr25">
+                    <img class="ml11 mt7 mr6" src="images/content_icon01.png">
+                    <a class="font18">定期投资</a>
+                </div>
+                <div class="profit mt15 mr25">
+                    <img class="ml11 mt6 " src="images/content_icon04.png">
+                    <a class="font18">双份收益</a>
+                </div>
+                <div class="profit mt15">
+                    <img class="ml11 mt7 mr6" src="images/content_icon03.png">
+                    <a class="font18">风险保障</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <h2 class="font14  ">项目期限有 7天 | 15天 | 1个月 | 3个月 | 6个月 | 9个月 | 12个月及以上</h2>
+            <h2 class="font14 ">预期年化收益率达 7% - 13%</h2>
+            <h2 class="font14 ">到期还本利息</h2>
+            <h2 class="font14 ">1000元即可投资，1元递增</h2>
+            <h2 class="font14 ">支持使用红包、满减券、加息券等奖励工具（根据具体项目会有不同）</h2>
+            <div class="index mt20">
+            	<img src="images/safe_icon03.png">
+                <ul >
+               		<li class="font18"><a>96</a></li> 
+                    <li class="mt5 font14">心动指数</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--------------生活------------------>
+<div class="live mt90">
+	<div class="liveBox">
+		<img src="images/live_icon01.png">
+    </div>
+</div> 
+<!--------------注册------------------>
+<div class="register">
+	<p class="font36">注册信融财富，就现在</p>
+    <h1 class="font14">开启自己财富增值新渠道，发现更多的美好</h1>
+    <div class="btn mt37"><a href="login.html">立即注册，尊享新人豪礼</a></div>
+</div>
+<!--------------新闻------------------>
+<div class="newsBox">
+	<div class="news">
+    	<div class="newsLf">
+        	<div class="more">
+                <p class="font32">新闻报道</p>
+                <h1 class="font16"><a href="#">+更多</a></h1>
+            </div>
+            <div class="content mt30">
+            	<img src="images/news_icon01.jpg" class="mr25">
+                <div class="contentRt">
+                	<h2 class="font14"><span class="mr301">金融界</span>2016-4-1</h2>
+                    <div class="line mt6"></div>
+                    <p class="font14 mt20">4月24日下午，做“投”时代的智者———精益投资高端交流沙龙在北京金地中心盛大举行，信融财富连个创始人、CEO胡德华应邀发表主旨演讲并参加圆桌论坛。沙龙由中国...</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="content mt30">
+            	<img src="images/news_icon02.jpg" class="mr25">
+                <div class="contentRt">
+                	<h2 class="font14"><span class="mr301">南方网</span>2016-4-2</h2>
+                    <div class="line mt6"></div>
+                    <p class="font14 mt20">4月25日，“教育+互联网”峰会在北京鸟巢文化中心盛大开幕，信融财富联合创始人、CEO胡德华应邀出席峰会并发表“互联网金融创新与创业”主题演讲。胡德华从...</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="newsRt">
+            <div class="more">
+                    <p class="font32">平台公告</p>
+                    <h1 class="font16"><a href="#">+更多</a></h1>
+            </div>
+            <div class="notice">
+            	<ul style="float:left;" class="font14 mt30 ">
+                	<li>● 尊敬的投资者:您好!...</li>
+                    <li>● 2016年5月10日,香港交易所主板上市公司中亚能源控...</li>
+                </ul> 
+                <ul style="float:right;" class="font14 mt27 current">
+                	<li>2016-5-11</li>
+                    <li>2016-5-10</li>
+                </ul>      	
+            </div>
+   	    </div>
+    <div class="clearfix"></div>
+	</div>
+    <div class="clearfix"></div>
+</div>
+<!--------------页脚------------------>
+<div class="footerBox">
+	<div class="foot">
+    	<ul class="mr70" >
+        	<li class="font18 ">友情链接</li>
+            <li class="mt15"><a href="#">信融长富</a></li>
+            <li><a href="#">信融家</a></li>
+            <li><a href="#">网贷之家</a></li>
+        </ul>
+        <ul class="mr70" >
+        	<li class="font18 ">帮助中心</li>
+            <li class="mt15"><a href="#">登录 | 注册</a></li>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">充值 | 提现</a></li>
+        </ul>
+        <ul class="mr25" >
+        	<li class="font18 ">关于我们</li>
+            <li class="mt15"><a href="#">关于信融</a></li>
+            <li><a href="#">媒体报道</a></li>
+            <li><a href="#">平台公告</a></li>
+        </ul>
+        <div class="code">
+        	<div class="fllow mr25">
+            	<img src="images/foot_code01.png" class="mr30">
+                <p>关注微信服务号</p>
+            </div>
+            <div class="fllow">
+            	<img src="images/foot_code02.png" class="mr30">
+                <p>下载App客户端</p>
+            </div>
+        </div>
+        <div class="number">
+        	<h1 class="font18">客服热线</h1>
+        	<h2 class="font48">400-777-9888</h2>
+        	<h3 class="font14">工作日 9:00 - 21:00</h3>
+        	<h3 class="font14">节假日 9:00 - 17:00</h3>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="copyright mt20">
+    	<h1>Copyright©2016,tourongjia.ocm.All Rights Reserved.ICP 备14039701号-6</h1>
+        <h1>公司地址：深圳市福田区深圳南路4026号田面城市大厦17B</h1>
+        <h1>市场有风险，投资需谨慎，营造合法、诚信借贷环境</h1>
+    </div>
+    
+</div>
+<script>
+/*---------------导航-----------------*/
+$(".header li a").mouseenter(
+	function(){
+		$(".header li a").removeClass("current")//所有的文字都变为原来的颜色
+		$(this).parent().addClass("border2").siblings().removeClass("border2")//同时它父亲的边框变成色
+		$(this).addClass("current").siblings().removeClass("current")//鼠标进过文字时，文字变色
+		}
+)
+/*---------------banner----------------*/
+var n=0
+$(".circle").click(
+	function(){
+		n=$(".circle").index($(this))
+		document.title=n
+		$(".banner").animate({marginLeft:-960-1920*n},1000)
+		$(".circle").removeClass("current")
+		$(this).addClass("current")
+		}
+)
+//定时器
+	var tLeft=setInterval(runLeft,3000)//自动向左走
+	var rRight//自动向右走的变量名
+	//向左走
+	function runLeft(){
+		if(n<5){
+		n=n+1
+		}else{
+		n=5
+		clearInterval(tLeft)//到尾端停止向左走
+		tRight=setInterval(runRight,3000)//开始反方向走
+		}
+		document.title=n
+		$(".banner").stop().animate({marginLeft:-960-(1920*n)})
+		//圆形按钮的提示样式更换
+		$(".circle").removeClass("current")
+		$(".circle").eq(n).addClass("current")	
+	}
+	//向右走
+	function runRight(){
+		if(n>0){
+		n=n-1	
+		}else{
+		n=0
+		clearInterval(runRight)//到顶端停止向右走
+		tLeft=setInterval(runLeft,3000)//开始反方向走
+		}
+		document.title=n
+		$(".banner").stop().animate({marginLeft:-960-(1920*n)})	
+		//圆形按钮的提示样式更换
+		$(".circle").removeClass("current")
+		$(".circle").eq(n).addClass("current")
+	}
+</script>
+</body>
+</html>

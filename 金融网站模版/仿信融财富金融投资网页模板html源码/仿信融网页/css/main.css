@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------重置属性---------------*/
+*{ margin:0; padding:0; font-family:Arial,"微软雅黑"，sans-serif;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+ul,li{ list-style:none;}
+a{ text-decoration:none;}
+/*-------------公共属性---------------*/
+.clearfix{ clear:both;}
+img{ display:block;}
+.color{ color:#333;}
+.font14{ font-size:14px;}
+.font16{ font-size:16px;}
+.font18{ font-size:18px;}
+.font26{ font-size:26px;}
+.font32{ font-size:32px;}
+.font36{ font-size:36px;}
+.font48{ font-size:48px;}
+.mt-6{ margin-top:-6px;}
+.mt6{ margin-top:6px;}
+.mt7{ margin-top:7px;}
+.mt15{ margin-top:15px;}
+.mt20{ margin-top:20px;}
+.mt27{ margin-top:27px;}
+.mt30{ margin-top:30px;}
+.mt37{ margin-top:37px;}
+.mt40{ margin-top:40px;}
+.mt78{ margin-top:78px;}
+.mt90{ margin-top:90px;}
+.ml11{ margin-left:11px;}
+.ml18{ margin-left:16px;}
+.mr6{ margin-right:6px;}
+.mr10{ margin-right:10px;}
+.mr18{ margin-right:18px;}
+.mr25{ margin-right:25px;}
+.mr30{ margin-right:30px;}
+.mr65{ margin-right:65px;}
+.mr47{ margin-right:47px;}
+.mr70{ margin-right:70px;}
+.mr120{ margin-right:120px;}
+.mr301{ margin-right:301px;}
+/*-------------头部属性---------------*/
+.headerBox{ width:100%; position:fixed; z-index:1;background-color:#fff; opacity:0.9; padding-top:24px; padding-bottom:20px;}
+.header{ max-width:1100px; margin-left:auto; margin-right:auto;}
+.header .logo{ float:left; margin-top:-15px;}
+.header ul{ float:right; margin-top:5px;}
+.header li{ float:left; width:118px; height:38px; border-radius:20px;; border:1px solid #999; text-align:center; line-height:38px;}
+.header li a{color:#333; font-size:16px;}
+.header .current{ color:#ed6d00;}
+.header .border2{ border:1px solid #ed6d00; }
+
+/*------------页脚---------------*/
+.footerBox{ background-color:#1e171f; padding-top:38px; padding-bottom:24px;}
+.foot{ max-width:1100px; margin-left:auto; margin-right:auto;}
+.foot ul{ float:left; color:#fff;}
+.foot li a{ color:#fff; font-size:14px; line-height:30px;}
+.foot .code{ height:190px; float:left; padding-left:25px; max-width:430px; padding-right:25px; text-align:center;}
+.foot .code .fllow{ float:left; text-align:center; max-width:150px;}
+.fllow p{ color:#fff; font-size:14px; line-height:30px;}
+.foot .number{ float:right; height:140px;  border:1px dashed #eaeaea; padding-left:15px; padding-right:15px; color:#cacaca;}
+.number h3{ line-height:30px;}
+.copyright{ max-width:1100px; margin-left:auto; margin-right:auto; text-align:center;}
+.copyright h1{ font-size:14px; color:#cacaca; line-height:30px;}
